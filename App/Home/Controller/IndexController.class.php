@@ -4,6 +4,7 @@ use Think\Controller;
 header("Content-type:text/html;charset=utf-8");
 class IndexController extends Controller {
     public function index(){
+		$this->explorer();
 		//var_dump(C('DB_TYPE'));die;
         // $this->show();          
         $model = D('Accounts');   
@@ -13,9 +14,9 @@ class IndexController extends Controller {
           $model->add(); */
         $a = $model->select();
 		$a = $model->where(array('block_num'=>'28'))->select();
-        var_dump($a);
+       // var_dump($a);
         // $this->display();
-		$this->display();
+		$this->display('explorer');
     }
 	public function explorer(){
 		$block = I('get.block');
