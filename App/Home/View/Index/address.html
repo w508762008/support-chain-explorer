@@ -1,0 +1,105 @@
+<include file="common/headr" />
+
+<body>
+	<include file="common/nav" />
+
+  <div id="admin_accounts" style="display: none" data=""></div>
+
+  
+
+  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
+
+    <div id="alert"><!----></div>
+  <div id="search" class="card mb-3">
+  <div class="card-body">
+  <form>
+	<div role="group" class="input-group">
+	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<{$keys}>" class="form-control">
+	<div class="input-group-append submit"><button type="button" class="btn btn-primary">Search</button></div>
+	</div>
+  </form>
+  </div>
+  </div>
+
+<script>
+ $(function(){
+	$('.submit').click(function(){
+		var info = $("#query").val();
+		$.post("<{:U('Index/query')}>",{data:info},function(r){
+			
+			if(r.block_id){
+				var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="/block/'+r.prev_block_id+'">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="/address/'+r.builder_account_name+'">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
+				$('.container').html(str)
+			}else{
+				var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
+				$('.container').html(str)
+			}
+		  },'json');
+	})
+	
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(3).find("a").addClass('active');
+ })
+</script>
+
+
+
+
+<div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
+
+	
+	<div id="account">
+		<div class="card key-value-box mb-3">
+			<div class="card-body">
+				<h4 class="card-title">Account</h4><hr>
+				<div class="container">
+					<div class="row"><div class="col-sm-4">name: </div> <div class="col-sm-8"><{$data.name}></div></div>
+					<div class="row"><div class="col-sm-4">xmx_token: </div> <div class="col-sm-8"><{$data.xmx_token}></div></div>
+					<div class="row"><div class="col-sm-4">staked_token: </div> <div class="col-sm-8"><{$data.staked_token}></div></div>
+					<div class="row"><div class="col-sm-4">unstaking_token: </div> <div class="col-sm-8"><{$data.unstaking_token}></div></div>
+					<div class="row"><div class="col-sm-4">createdTime: </div> <div class="col-sm-8"><{$data.createdTimes}></div></div>
+				</div>
+			</div>
+		</div>
+		<div class="card mt-3" style="display:none;">
+			<div class="card-body">
+				<h4 class="card-title">Transactions</h4>
+				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
+					<thead class="">
+						<tr>
+							<th aria-colindex="1" class="">Tx Id</th>
+							<th aria-colindex="2" class="">Status</th>
+							<th aria-colindex="3" class="">Block</th>
+							<th aria-colindex="4" class="">Timestamp</th>
+							<th aria-colindex="5" class="">From</th>
+							<th aria-colindex="6" class=""></th>
+							<th aria-colindex="7" class="">To</th>
+							<th aria-colindex="8" class="">Value</th>
+						</tr>
+					</thead><!---->
+					<tbody role="rowgroup" class=""><!---->
+						<tr role="row" class="">
+							<td aria-colindex="1" data-label="Tx Id" role="cell" class=""><div><a href="/tx/" target="_self" class="address-tag">0x60d276d5d301d644051e3e7398512a65cd784c08b54aa850f839c33dc92d2e469c6485c0</a></div></td>
+							<td aria-colindex="2" data-label="Status" role="cell" class=""><div><font class="text-success">Success</font></div></td>
+							<td aria-colindex="3" data-label="Block" role="cell" class=""><div><a href="/block/0/25" target="_self" class="">25</a></div></td>
+							<td aria-colindex="4" data-label="Timestamp" role="cell" class=""><div>2018-08-03 16:29:27 PDT</div></td>
+							<td aria-colindex="5" data-label="From" role="cell" class=""><div><a href="/address/" target="_self" class="address-tag">0x199bcc2ebf71a851e388bd926595376a49bdaa329c6485c0</a>(0)</div></td>
+							<td aria-colindex="6" data-label="" role="cell" class=""><div><span class="badge badge-warning">OUT</span></div></td>
+							<td aria-colindex="7" data-label="To" role="cell" class=""><div><a href="/address/" target="_self" class="address-tag">0xe1b71f913353053395733f6113f7d2e538a60905e1533fc0</a>(0)</div></td>
+							<td aria-colindex="8" data-label="Value" role="cell" class=""><div>10 tQKC</div></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn w-100 btn-link btn-sm">Load more transactions</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+  </div>
+
+
+
+</body></html>
