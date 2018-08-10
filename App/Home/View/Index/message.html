@@ -53,11 +53,11 @@ window.onload = function () {
 			<div class="card-body"><h4 class="card-title">Transactions</h4><hr>
 				<div class="container">
 					<notempty name="data">
-						<div class="row"><div class="col-sm-3">transaction_id: </div><div class="col-sm-9"><a href="javascript:void(0);"><{$data.transaction_id}></a></div></div>
-						<div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <{$data.authorization.0.account}><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>
-						<div class="row"><div class="col-sm-3">handler_account_name: </div> <div class="col-sm-9"><{$data.handler_account_name}></div></div>
-						<div class="row"><div class="col-sm-3">type: </div> <div class="col-sm-9"><{$data.type}> </div></div>
-						<div class="row"><div class="col-sm-3">createdTime: </div> <div class="col-sm-9"><{$data.createdTimes}></div></div>
+						<div class="row"><div class="col-sm-3">Transaction id: </div><div class="col-sm-9"><a href="javascript:void(0);"><{$data.transaction_id}></a></div></div>
+						<div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <{$data.authorization.0.account}><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>
+						<div class="row"><div class="col-sm-3">Handler Account Name: </div> <div class="col-sm-9"><{$data.handler_account_name}></div></div>
+						<div class="row"><div class="col-sm-3">Type: </div> <div class="col-sm-9"><{$data.type}> </div></div>
+						<div class="row"><div class="col-sm-3">Created Time: </div> <div class="col-sm-9"><{$data.createdTimes}></div></div>
 						<notempty name="datas">
 							<{$datas}>
 						</notempty>

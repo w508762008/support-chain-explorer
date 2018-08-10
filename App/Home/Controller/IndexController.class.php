@@ -61,7 +61,7 @@ class IndexController extends Controller {
 			}
 			echo json_encode(array('type'=>2,'list'=>$data));die;
 		}
-		
+		}
 		$model = D('Blocks');
 		//var_dump(strlen($data));die;
 		if(strlen($data)>=64){
@@ -76,7 +76,7 @@ class IndexController extends Controller {
 			$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
 		}
 		echo json_encode(array('type'=>3,'list'=>$data));die;
-		}
+		
         
 	}
 	public function fylist(){		//块数据列表
@@ -202,7 +202,7 @@ class IndexController extends Controller {
 				}else{
 					if($i>0 && $i!=2){
 						
-						$this->td .= '<div class="row r'.$i.'"><div class="col-sm-3">'.$k.': </div> <div class="col-sm-9">'.$v.'</div></div>';	
+						$this->td .= '<div class="row r'.$i.'"><div class="col-sm-3">'.ucfirst($k).': </div> <div class="col-sm-9">'.$v.'</div></div>';	
 					}else{
 					//$this->td .= '<div class="row"><div class="col-sm-3">'.$k.': </div> <div class="col-sm-9">'.$v.'</div></div>';
 					$this->td .= '';
