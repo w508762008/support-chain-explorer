@@ -1,0 +1,31 @@
+{
+    "name": "mongo",
+    "version": "1.6.11",
+    "type": "extension",
+    "license": [
+        "Apache License"
+    ],
+    "authors": [
+        {
+            "name": "Derick Rethans",
+            "email": "derick@php.net"
+        },
+        {
+            "name": "Hannes Magnusson",
+            "email": "bjori@php.net"
+        },
+        {
+            "name": "Jeremy Mikola",
+            "email": "jmikola@php.net"
+        }
+    ],
+    "description": "MongoDB database driver",
+    "extra": {
+        "configure-options": {
+            "with-mongo-sasl": {
+                "default": "no",
+                "prompt": "Build with Cyrus SASL (MongoDB Enterprise Authentication) support?"
+            }
+        }
+    }
+}
