@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 header("Content-type:text/html;charset=utf-8");
 class IndexController extends Controller {
+	public $td = '';
     public function index(){
 		$this->explorer();
 		//var_dump(C('DB_TYPE'));die;
@@ -18,10 +19,11 @@ class IndexController extends Controller {
         // $this->display();
 		$this->display('explorer');
     }
-	public function explorer(){
+	public function explorer(){ //块数据
 		$block = I('get.block');
 		if($block){
 			$model = D('Blocks');
+			//$model = new \MongoModel('Blocks');
 			$a = $model->where(array('block_num'=>$block))->order('block_num asc')->select();
 			foreach($a as $k=>$v){
 				$data = $v;
@@ -32,15 +34,33 @@ class IndexController extends Controller {
 		}
 		$this->display();
 	}
-	public function query(){
+	public function query(){//查询块数据
 		$data = I('post.data');
+		if($data){
+		$a = D("Accounts")->where(array('name'=>$data))->select(); //先查询用户是否存在
+		if(count($a)){
+			foreach($a as $k=>$v){
+				$data = $v;
+				$data['createdTimes'] = date('Y-m-d H:i:s',$data['createdTime']->sec);
+				$data['url'] = U('index/address',array('name'=>$v['name']));
+			}
+			echo json_encode(array('type'=>1,'list'=>$data));die;
+		}
 		
+		$a = D('Transactions')->where(array('transaction_id'=>$data))->select();//第二查询记录id
+		if(count($a)){
+			foreach($a as $k=>$v){
+				$data = $v;
+				$data['expirations'] = date('Y-m-d H:i:s',$data['expiration']->sec);
+				$data['url'] = U('index/paylist',array('transaction'=>$v['transaction_id']));
+			}
+			echo json_encode(array('type'=>2,'list'=>$data));die;
+		}
 		
 		$model = D('Blocks');
 		//var_dump(strlen($data));die;
 		if(strlen($data)>=64){
 			$where['block_id'] = $data;
-			//$where['block_id'] = $this->Hex2String($data);
 		}elseif(strlen($data)<64 &&strlen($data)>0 ){
 			$where['block_num'] = $data;	
 		}
@@ -48,18 +68,13 @@ class IndexController extends Controller {
 		
 		foreach($a as $k=>$v){
 			$data = $v;
-			//$data['block_id'] = $this->String2Hex($data['block_id']);
-			//$data['prev_block_id'] = $this->String2Hex($data['prev_block_id']);
-			
 			$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
-			
-			//$data['prev_block_id'] = dechex($data['prev_block_id']);
 		}
-		echo json_encode($data);die;
-		
+		echo json_encode(array('type'=>3,'list'=>$data));die;
+		}
         
 	}
-	public function fylist(){		
+	public function fylist(){		//块数据列表
 		$model = D('Blocks');
 		$p = I('get.p');
 		
@@ -86,6 +101,112 @@ class IndexController extends Controller {
 		$this->display();
 		
 	}
+	public function address(){//矿工信息  交易记录
+		$name = I('get.name');
+		$model = D('Accounts');
+		if($name){
+			$a = $model->where(array('name'=>$name))->select();
+			foreach($a as $k=>$v){
+				$data = $v;
+				$data['createdTimes'] = date('Y-m-d H:i:s',$data['createdTime']->sec);
+			}
+			$this->assign('data',$data);
+			$this->assign('keys',$block);
+		}
+		$this->display();
+	}
+	public function account(){
+		$model = D('Accounts');
+		$p = I('get.p');
+		
+		if($p){
+			$limit = ($p-1)*10;
+		}else{
+			$limit = 0;
+		}
+		$list = $model->limit($limit,10)->select();
+		//var_dump($model->getlastsql());die;
+		
+		foreach($list as $k=>$v){
+			$v['createdTimes'] = date('Y-m-d H:i:s',$v['createdTime']->sec);
+			$newlist[] = $v;
+		}
+		$this->assign('list',$newlist);
+		$count = count($model->select());
+		$page = new \Think\Page($count,10);
+		$show = $page->show();
+		$this->assign('page',$show);
+		$this->display();
+		
+	}
+	
+	public function paylist(){//交易记录
+		$keys = I('get.transaction');
+		if($keys){
+			$where['transaction_id'] = $keys;
+		}
+		$model = D('Transactions');
+		
+		$count = count($model->select());
+		$page = new \Think\Page($count,10);
+		$show = $page->show();
+		$this->assign('page',$show);
+		$p = I('get.p');
+		
+		if($p){
+			$limit = ($p-1)*10;
+		}else{
+			$limit = 0;
+		}
+		$list = $model->where($where)->order('expiration desc')->limit($limit,10)->select();
+		foreach($list as $k=>$v){
+			$v['expirations'] = date('Y-m-d H:i:s',$v['expiration']->sec);
+			$v['messagess'] = array_values(get_object_vars($v['messages'][0]));
+			$newlist[] = $v;
+		}
+		//var_dump($newlist);die;
+		$this->assign('list',$newlist);
+		
+		$this->display();
+	}
+	public function message(){
+		$id = I("get.id");
+		$model = D('Messages');
+		//$id = "ObjectId('$id')";
+		
+		$a = $model->where(array('_id'=>new \MongoId($id)))->order('createdTime asc')->select();
+		//var_dump($model->getlastsql());
+		//var_dump($a);die;
+		$a[$id]['createdTimes'] = date('Y-m-d H:i:s',$a[$id]['createdTime']->sec);
+		
+		$data = $a[$id]['data'];
+		$this->td = '';
+		$this->gettb($data,0);
+		
+		$this->assign('datas',$this->td);
+		
+		$this->assign('data',$a[$id]);
+		$this->display();
+	}
+	
+	public function gettb($data,$i){$i++;
+		if(is_array($data)){
+			foreach($data as $k=>$v){
+				if(is_array($v)){
+					$this->gettb($v,$i);
+				}else{
+					if($i>0 && $i!=2){
+						
+						$this->td .= '<div class="row r'.$i.'"><div class="col-sm-3">'.$k.': </div> <div class="col-sm-9">'.$v.'</div></div>';	
+					}else{
+					//$this->td .= '<div class="row"><div class="col-sm-3">'.$k.': </div> <div class="col-sm-9">'.$v.'</div></div>';
+					$this->td .= '';
+					}
+				}
+			}
+		}
+	}
+	
 	function String2Hex($string){
 		$hex='';
 		for ($i=0; $i < strlen($string); $i++){

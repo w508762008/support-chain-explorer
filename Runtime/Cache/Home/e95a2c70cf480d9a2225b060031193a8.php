@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0038)https://testnet.quarkchain.io/explorer -->
 <html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>QuarkChain TestNet (tQKC)</title>
+  <title>XMAX</title>
   <link rel="icon" href="https://testnet.quarkchain.io/qkc+favicon.png" type="image/png">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,17 +26,15 @@
 	<div id="nav">
 	<nav id="nav" class="navbar navbar-dark bg-info navbar-expand-md">
 		<button type="button" aria-label="Toggle navigation" aria-controls="nav_collapse" aria-expanded="false" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-		<a href="/" target="_self" class="navbar-brand">QuarkChain<span class="brand-subtitle">beta</span></a>
+		<a href="/" target="_self" class="navbar-brand">XMAX<span class="brand-subtitle">beta</span></a>
 		<div id="nav_collapse" class="navbar-collapse collapse" style="display: none;">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a href="/wallet" target="_self" class="nav-link">Wallet</a></li>
-				<li class="nav-item"><a href="/contract" target="_self" class="nav-link">Contract</a></li>
-				<li class="nav-item"><a href="<?php echo U('index/explorer');?>" target="_self" class="nav-link active">Explorer</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/explorer');?>" target="_self" class="nav-link ">blocks</a></li>
 				<li class="nav-item"><a href="<?php echo U('index/fylist');?>" target="_self" class="nav-link">Stats</a></li>
-				<li class="nav-item"><a href="/network" target="_self" class="nav-link">Network</a></li>
-				<li class="nav-item"><a rel="noopener" href="https://youtu.be/dUldrq3zKwE?t=8m28s" target="_blank" class="nav-link">Loadtest</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/paylist');?>" target="_self" class="nav-link">transactions</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/account');?>" target="_self" class="nav-link">accounts</a></li>
 			</ul>
-			<ul class="navbar-nav ml-auto">
+			<!-- <ul class="navbar-nav ml-auto">
 				<li id="__BVID__4" class="nav-item b-nav-dropdown dropdown" title="" data-original-title="Pick the cluster to connect">
 					<a href="#" id="__BVID__4__BV_button_" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Cluster: 35.155.169.253:38291</span></a>
 					<div aria-labelledby="__BVID__4__BV_button_" class="dropdown-menu dropdown-menu-right">
@@ -49,10 +47,17 @@
 						<a role="menuitem" href="#" target="_self" class="dropdown-item">54.204.87.153:38291</a>
 					</div>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 	</nav>
 	</div>
+	
+	<script>
+	$(function(){
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(1).find("a").addClass('active');
+	});
+	</script>
 
   <div id="admin_accounts" style="display: none" data=""></div>
 

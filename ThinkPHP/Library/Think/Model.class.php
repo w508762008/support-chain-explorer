@@ -1487,7 +1487,8 @@ class Model {
             }else{
                 $tableName .= parse_name($this->name);
             }
-            $this->trueTableName    =   strtolower($tableName);
+            //$this->trueTableName    =   strtolower($tableName);
+            $this->trueTableName    =   ($tableName);
         }
         return (!empty($this->dbName)?$this->dbName.'.':'').$this->trueTableName;
     }
