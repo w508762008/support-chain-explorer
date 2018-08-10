@@ -2,7 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
 	
-
+//'URL_MODEL' => 2,
 'MONGO'=> array(
 'DB_TYPE'   => 'mongo', // 数据库类型
 'DB_HOST'   => 'localhost', // 服务器地址
