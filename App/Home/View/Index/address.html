@@ -10,7 +10,7 @@
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
 
     <div id="alert"><!----></div>
-  <div id="search" class="card mb-3">
+  <!-- <div id="search" class="card mb-3">
   <div class="card-body">
   <form>
 	<div role="group" class="input-group">
@@ -19,10 +19,10 @@
 	</div>
   </form>
   </div>
-  </div>
+  </div> -->
 
 <script>
- $(function(){
+window.onload = function () { 
 	$('.submit').click(function(){
 		var info = $("#query").val();
 		$.post("<{:U('Index/query')}>",{data:info},function(r){
@@ -39,7 +39,7 @@
 	
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(3).find("a").addClass('active');
- })
+ }
 </script>
 
 
@@ -61,38 +61,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card mt-3" style="display:none;">
-			<div class="card-body">
-				<h4 class="card-title">Transactions</h4>
-				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
-					<thead class="">
-						<tr>
-							<th aria-colindex="1" class="">Tx Id</th>
-							<th aria-colindex="2" class="">Status</th>
-							<th aria-colindex="3" class="">Block</th>
-							<th aria-colindex="4" class="">Timestamp</th>
-							<th aria-colindex="5" class="">From</th>
-							<th aria-colindex="6" class=""></th>
-							<th aria-colindex="7" class="">To</th>
-							<th aria-colindex="8" class="">Value</th>
-						</tr>
-					</thead><!---->
-					<tbody role="rowgroup" class=""><!---->
-						<tr role="row" class="">
-							<td aria-colindex="1" data-label="Tx Id" role="cell" class=""><div><a href="/tx/" target="_self" class="address-tag">0x60d276d5d301d644051e3e7398512a65cd784c08b54aa850f839c33dc92d2e469c6485c0</a></div></td>
-							<td aria-colindex="2" data-label="Status" role="cell" class=""><div><font class="text-success">Success</font></div></td>
-							<td aria-colindex="3" data-label="Block" role="cell" class=""><div><a href="/block/0/25" target="_self" class="">25</a></div></td>
-							<td aria-colindex="4" data-label="Timestamp" role="cell" class=""><div>2018-08-03 16:29:27 PDT</div></td>
-							<td aria-colindex="5" data-label="From" role="cell" class=""><div><a href="/address/" target="_self" class="address-tag">0x199bcc2ebf71a851e388bd926595376a49bdaa329c6485c0</a>(0)</div></td>
-							<td aria-colindex="6" data-label="" role="cell" class=""><div><span class="badge badge-warning">OUT</span></div></td>
-							<td aria-colindex="7" data-label="To" role="cell" class=""><div><a href="/address/" target="_self" class="address-tag">0xe1b71f913353053395733f6113f7d2e538a60905e1533fc0</a>(0)</div></td>
-							<td aria-colindex="8" data-label="Value" role="cell" class=""><div>10 tQKC</div></td>
-						</tr>
-					</tbody>
-				</table>
-				<button type="button" class="btn w-100 btn-link btn-sm">Load more transactions</button>
-			</div>
-		</div>
+		
 	</div>
 	
 	

@@ -62,27 +62,36 @@
     <div id="alert"><!----></div>
   <div id="search" class="card mb-3">
   <div class="card-body">
-  <form>
+  
 	<div role="group" class="input-group">
 	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<?php echo ($keys); ?>" class="form-control">
-	<div class="input-group-append submit"><button type="button" class="btn btn-primary">Search</button></div>
+	<div class="input-group-append submit"><button id="search_button" type="button" class="btn btn-primary">Search</button></div>
 	</div>
-  </form>
+ 
   </div>
   </div>
 
 <script>
- $(function(){
+window.onload = function () { 
+	$('#query').bind('keyup', function(event) {
+        if (event.keyCode == "13") {
+            //回车执行查询
+            $('#search_button').click();
+        }
+    });
+ 
 	$('.submit').click(function(){
 		var info = $("#query").val();
 		$.post("<?php echo U('Index/query');?>",{data:info},function(rr){
 			var r = rr.list;
 			if(rr.type == 1){
 				var str = '<div class="row"><div class="col-sm-3">name: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.name+'</a></div></div><div class="row"><div class="col-sm-3">xmx_token: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.xmx_token+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">staked_token: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.staked_token+'</a></div></div><div class="row"><div class="col-sm-3">unstaking_token: </div> <div class="col-sm-9">'+r.unstaking_token+' </div></div><div class="row"><div class="col-sm-3">createdTime: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.createdTimes+'</a></div></div>';
-					$('.container').html(str)
+					$('.container').html(str);
+					$('.titles').html('Accounts');
 			}else if(rr.type == 2){
 				var str = '<div class="row"><div class="col-sm-3">transaction_id: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.transaction_id+'</a></div></div><div class="row"><div class="col-sm-3">transaction_index: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.transaction_index+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">block_id: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">ref_block_num: </div> <div class="col-sm-9">'+r.ref_block_num+' </div></div><div class="row"><div class="col-sm-3">ref_block_prefix: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.ref_block_prefix+'</a></div></div><div class="row"><div class="col-sm-3">expiration: </div> <div class="col-sm-9">'+r.expiration+'</div></div>';
-					$('.container').html(str)
+					$('.container').html(str);
+					$('.titles').html('Transactions');
 			}else if(rr.type == 3){
 				if(r.block_id){
 					var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
@@ -91,12 +100,13 @@
 					var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
 					$('.container').html(str)
 				}
+				$('.titles').html('Block');
 			}
 		  },'json');
 	})
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(0).find("a").addClass('active');
- })
+ }
 </script>
 
 
@@ -106,7 +116,7 @@
 
 	<div id="block">
 		<div class="card key-value-box">
-			<div class="card-body"><h4 class="card-title">Block</h4><hr>
+			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
 				<div class="container">
 					<?php if(!empty($data)): ?><div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);"><?php echo ($data["block_id"]); ?></a></div></div>
 						<div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <?php echo ($data["block_num"]); ?><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>

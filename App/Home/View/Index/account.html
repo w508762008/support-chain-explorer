@@ -22,7 +22,7 @@
   </div>
 
 <script>
- $(function(){
+window.onload = function () { 
 	$('.submit').click(function(){
 		var info = $("#query").val();
 		$.post("<{:U('Index/query')}>",{data:info},function(r){
@@ -39,7 +39,7 @@
 	
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(3).find("a").addClass('active');
- })
+ }
 </script>
 
 

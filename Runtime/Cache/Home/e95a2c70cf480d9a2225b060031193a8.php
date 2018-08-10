@@ -53,10 +53,10 @@
 	</div>
 	
 	<script>
-	$(function(){
+	window.onload = function () { 
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(1).find("a").addClass('active');
-	});
+	}
 	</script>
 
   <div id="admin_accounts" style="display: none" data=""></div>

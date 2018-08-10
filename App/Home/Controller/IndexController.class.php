@@ -24,7 +24,7 @@ class IndexController extends Controller {
 		if($block){
 			$model = D('Blocks');
 			//$model = new \MongoModel('Blocks');
-			$a = $model->where(array('block_num'=>$block))->order('block_num asc')->select();
+			$a = $model->where(array('block_num|block_id'=>$block))->order('block_num asc')->select();
 			foreach($a as $k=>$v){
 				$data = $v;
 				$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);

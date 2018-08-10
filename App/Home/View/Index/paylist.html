@@ -22,7 +22,7 @@
   </div>
 
 <script>
- $(function(){
+window.onload = function () { 
 	$('.submit').click(function(){
 		var info = $("#query").val();
 		$.post("<{:U('Index/query')}>",{data:info},function(r){
@@ -39,7 +39,7 @@
 	
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(2).find("a").addClass('active');
- })
+ }
 </script>
 
 
@@ -73,12 +73,12 @@
 						<tr role="row" class="">
 							<td aria-colindex="1" data-label="transaction_id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.transaction_id}></a></div></td>
 							<td aria-colindex="2" data-label="transaction_index" role="cell" class=""><div><font class="text-success"><{$vo.transaction_index}></font></div></td>
-							<td aria-colindex="3" data-label="block_id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
+							<td aria-colindex="3" data-label="block_id" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
 							<td aria-colindex="4" data-label="ref_block_num" role="cell" class=""><div><{$vo.ref_block_num}></div></td>
 							<td aria-colindex="5" data-label="ref_block_prefix" role="cell" class=""><div><{$vo.ref_block_prefix}></div></td>
 							<td aria-colindex="6" data-label="expiration" role="cell" class=""><div><{$vo.expirations}></div></td>
 							<td aria-colindex="7" data-label="messages" role="cell" class=""><div><a href="<{:U('index/message',array('id'=>$vo['messagess'][0]))}>" target="_self" class="address-tag"><{$vo.messagess.0}></a></div></td>
-							<td aria-colindex="8" data-label="scope" role="cell" class=""><div><{$vo.scope.0}></div></td>
+							<td aria-colindex="8" data-label="scope" role="cell" class=""><div><a href="<{:U('index/address',array('name'=>$vo['scope'][0]))}>" target="_self"><{$vo.scope.0}></a></div></td>
 							<td aria-colindex="9" data-label="signatures" role="cell"><div class="address-tag"><{$vo.signatures.0}></div></td>
 						</tr>
 					</volist>
