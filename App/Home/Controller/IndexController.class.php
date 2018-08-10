@@ -24,7 +24,12 @@ class IndexController extends Controller {
 		if($block){
 			$model = D('Blocks');
 			//$model = new \MongoModel('Blocks');
-			$a = $model->where(array('block_num|block_id'=>$block))->order('block_num asc')->select();
+			if(strlen($block)>=64){
+				$where['block_id'] = $block;
+			}elseif(strlen($block)<64 &&strlen($block)>0 ){
+				$where['block_num'] = $block;	
+			}
+			$a = $model->where($where)->order('block_num asc')->select();
 			foreach($a as $k=>$v){
 				$data = $v;
 				$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
