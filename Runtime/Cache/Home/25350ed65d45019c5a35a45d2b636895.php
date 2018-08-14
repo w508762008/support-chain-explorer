@@ -57,7 +57,7 @@
 
   
 
-  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
+  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1220px">
 
     <div id="alert"><!----></div>
  <style>
@@ -140,21 +140,15 @@ window.onload = function () {
 	
  }
 </script>
-	<div id="block" style="display:none;">
-		<div class="card key-value-box">
-			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
-				<div class="container">
-					
-				</div>
-			</div>
-		</div>
-	</div>
 
 <script>
 $(function(){
-	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(3).find("a").addClass('active');
- });
+	$("#page a").click(function(){
+		var p = $(this).attr('p');
+		$("input[name='p']").val(p);
+		$('#search_button').click();
+	});
+});
 </script>
 
 
@@ -162,10 +156,96 @@ $(function(){
 
 <div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
 
-	<div id="account">
-		
+	
+	<!-- 列表 start -->
+	<div id="fullStats">
 		<div class="card mt-3">
-			<div class="card-body">
+		<?php if(($type) == "Blocks"): ?><div class="card-body">
+				<h4 class="card-title">Block</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">ID</th>
+					<th aria-colindex="2" class="">Height</th>
+					<th aria-colindex="3" class="">Timestamp</th>
+					<!-- <th aria-colindex="4" class="">Parent ID</th> -->
+					<th aria-colindex="5" class="">Builder</th>
+					<!-- <th aria-colindex="6" class="">transaction_merkle_root</th> -->
+					<th aria-colindex="7" class="">Block Size</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><?php echo ($vo["block_id"]); ?></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<?php echo U('index/explorer',array('block'=>$vo['block_num']));?>"><?php echo ($vo["block_num"]); ?></a></div></td>
+						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><?php echo ($vo["timestamps"]); ?></div></td>
+						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><?php echo ($vo["prev_block_id"]); ?></div></td> -->
+						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><?php echo ($vo["builder_account_name"]); ?></div></td>
+						<!-- <td aria-colindex="6" data-label="transaction_merkle_root" role="cell" class=""><div><?php echo ($vo["transaction_merkle_root"]); ?></div></td> -->
+						<td aria-colindex="5" data-label="block_size" role="cell" class=""><div><?php echo ($vo["kb"]); ?>KB</div></td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				</tbody>
+				</table>
+			</div><?php endif; ?>
+			<?php if(($type) == "Messages"): ?><div class="card-body">
+				<h4 class="card-title">Messages</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">Message ID</th>
+					<th aria-colindex="2" class="">Transaction ID</th>
+					<th aria-colindex="3" class="">Handler Account Name</th>
+					<th aria-colindex="4" class="">Type</th>
+					<th aria-colindex="5" class="">CreatedTime</th>
+					<th aria-colindex="6" class="">Authorization</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
+						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><?php echo ($vo["message_id"]); ?></div></td>
+						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<?php echo U('index/paylist',array('transaction'=>$vo['transaction_id']));?>"><?php echo ($vo["transaction_id"]); ?></a></div></td>
+						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><?php echo ($vo["handler_account_name"]); ?></div></td>
+						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><?php echo ($vo["type"]); ?></div></td>
+						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><?php echo ($vo["createdTimes"]); ?></div></td>
+						<td aria-colindex="6" data-label="Authorization" role="cell" class=""><div><?php echo ($vo["authorization"]["0"]["account"]); ?></div></td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				</tbody>
+				</table>
+			</div><?php endif; ?>
+			<?php if(($type) == "Transactions"): ?><div class="card-body">
+				<h4 class="card-title">Transactions</h4>
+				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
+					<thead class="">
+						<tr>
+							<th aria-colindex="1" class="">Transaction ID</th>
+							<th aria-colindex="2" class="">Transaction Index</th>
+							<th aria-colindex="3" class="">Block ID</th>
+							<!-- <th aria-colindex="4" class="">ref_block_num</th> -->
+							<!-- <th aria-colindex="5" class="">ref_block_prefix</th> -->
+							<th aria-colindex="6" class="">Expiration</th>
+							<th aria-colindex="7" class="">Messages</th>
+							<th aria-colindex="8" class="">Scope</th>
+							<!-- <th aria-colindex="9" class="">signatures</th> -->
+						</tr>
+					</thead><!---->
+					<tbody role="rowgroup" class=""><!---->
+					<?php if(!empty($list)): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
+							<td aria-colindex="1" data-label="Transaction id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><?php echo ($vo["transaction_id"]); ?></a></div></td>
+							<td aria-colindex="2" data-label="Transaction index" role="cell" class=""><div><font class="text-success"><?php echo ($vo["transaction_index"]); ?></font></div></td>
+							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<?php echo U('index/explorer',array('block'=>$vo['block_id']));?>" target="_self" class="address-tag"><?php echo ($vo["block_id"]); ?></a></div></td>
+							<!-- <td aria-colindex="4" data-label="ref_block_num" role="cell" class=""><div><?php echo ($vo["ref_block_num"]); ?></div></td> -->
+							<!-- <td aria-colindex="5" data-label="ref_block_prefix" role="cell" class=""><div><?php echo ($vo["ref_block_prefix"]); ?></div></td> -->
+							<td aria-colindex="6" data-label="Expiration" role="cell" class=""><div><?php echo ($vo["expirations"]); ?></div></td>
+							<td aria-colindex="7" data-label="Messages" role="cell" class=""><div><a href="<?php echo U('index/message',array('id'=>$vo['messagess'][0]));?>" target="_self" class="address-tag"><?php echo ($vo["messagess"]["0"]); ?></a></div></td>
+							<td aria-colindex="8" data-label="Scope" role="cell" class=""><div><a href="<?php echo U('index/address',array('name'=>$vo['scope'][0]));?>" target="_self"><?php echo ($vo["scope"]["0"]); ?></a></div></td>
+							<!-- <td aria-colindex="9" data-label="signatures" role="cell"><div class="address-tag"><?php echo ($vo["signatures"]["0"]); ?></div></td> -->
+						</tr><?php endforeach; endif; else: echo "" ;endif; endif; ?>
+					</tbody>
+				</table>
+			</div><?php endif; ?>
+			<?php if(($type) == "Accounts"): ?><div class="card-body">
 				<h4 class="card-title">Accounts</h4>
 				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
 					<thead class="">
@@ -187,10 +267,14 @@ $(function(){
 						</tr><?php endforeach; endif; else: echo "" ;endif; endif; ?>
 					</tbody>
 				</table>
-				<div id="page"><?php echo ($page); ?></div>
+			</div><?php endif; ?>
+			<div id="page">
+				<?php echo ($page); ?>
 			</div>
 		</div>
 	</div>
+	<!-- 列表 end -->
+	
 
   </div>
 

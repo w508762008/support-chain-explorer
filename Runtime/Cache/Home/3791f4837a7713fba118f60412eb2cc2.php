@@ -60,19 +60,39 @@
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1220px">
 
     <div id="alert"><!----></div>
-   <div id="search" class="card mb-3">
+  <style>
+#search .row{margin-left:1.5px;}
+.lable{background-color: #17a2b8;color: #fff;margin-right: 13px;padding: 7px 8px;border-radius: 3px;cursor:pointer;}
+</style>
+ <div id="search" class="card mb-3">
   <div class="card-body">
-  
+	<form action="<?php echo U('index/search');?>" method="post" id="serach">
 	<div role="group" class="input-group">
-	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<?php echo ($keys); ?>" class="form-control">
+	<input id="query" type="text" required="required" name="key" placeholder="Example query: &#39;19&#39; for  blook num 19; &#39;xmax&#39; for account name; or search block id / tx id / message id" aria-required="true" value="<?php echo ($keys); ?>" class="form-control" />
+	<input type="hidden" name="keys" value="<?php echo ($keys); ?>" />
+	<input type="hidden" name="p" value="<?php echo ($p); ?>" />
+	<input type="hidden" name="type" value="<?php echo ($type); ?>" />
 	<div class="input-group-append submit"><button id="search_button" type="button" class="btn btn-primary">Search</button></div>
 	</div>
- 
+	</form>
+	
+	<div class="row">
+		<?php if(!empty($blocks_num)): ?><div tp="Blocks" <?php if(($type) == "Blocks"): ?>style="background-color:#ccc;"<?php endif; ?> class="lable">Blocks(<?php echo ($blocks_num); ?>)</div><?php endif; ?>
+		<?php if(!empty($messages_num)): ?><div tp="Messages" <?php if(($type) == "Messages"): ?>style="background-color:#ccc;"<?php endif; ?> class="lable">Messages(<?php echo ($messages_num); ?>)</div><?php endif; ?>
+		<?php if(!empty($transactions_num)): ?><div tp="Transactions" <?php if(($type) == "Transactions"): ?>style="background-color:#ccc;"<?php endif; ?> class="lable">Transactions(<?php echo ($transactions_num); ?>)</div><?php endif; ?>
+		<?php if(!empty($accounts_num)): ?><div tp="Accounts" <?php if(($type) == "Accounts"): ?>style="background-color:#ccc;"<?php endif; ?> class="lable">Accounts(<?php echo ($accounts_num); ?>)</div><?php endif; ?>
+	</div>
   </div>
   </div>
 
 <script >
 window.onload = function () { 
+	
+	$(".row .lable").click(function(){
+		$("input[name='type']").val($(this).attr('tp'));
+		$("input[name='p']").val(1);
+		$('#search_button').click();
+	});
 
 	$('#query').bind('keyup', function(event) {
         if (event.keyCode == "13") {
@@ -82,7 +102,16 @@ window.onload = function () {
     });
  
 	$('.submit').click(function(){
-		var info = $("#query").val();
+		var key = $("input[name='key']").val();
+		var keys = $("input[name='keys']").val();
+		if(key != keys){
+			$("input[name='keys']").val(key);
+			$("input[name='p']").val(1);
+			$("input[name='type']").val('');
+		}
+		
+		$('#serach').submit();
+		/* var info = $("#query").val();
 		$.post("<?php echo U('Index/query');?>",{data:info},function(rr){
 			var r = rr.list;
 			if(rr.type == 1){
@@ -106,7 +135,7 @@ window.onload = function () {
 				$('#block').show();
 				$('.titles').html('Block');
 			}
-		  },'json');
+		  },'json'); */
 	});
 	
  }

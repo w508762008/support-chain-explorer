@@ -226,7 +226,7 @@ class IndexController extends Controller {
 				if(is_array($v)){
 					$this->gettb($v,$i);
 				}else{
-					if($i>0 && $i!=2){
+					if($i>0 && $i!=2  && $i!=4){
 						
 						$this->td .= '<div class="row r'.$i.'"><div class="col-sm-3">'.ucfirst($k).': </div> <div class="col-sm-9">'.$v.'</div></div>';	
 					}else{
@@ -238,19 +238,110 @@ class IndexController extends Controller {
 		}
 	}
 	
-	function String2Hex($string){
-		$hex='';
-		for ($i=0; $i < strlen($string); $i++){
-			$hex .= dechex(ord($string[$i]));
+	//搜索处理 页面
+	public function search(){
+		$keys = I('post.keys')?I('post.keys'):'';//
+		$type = I('post.type')?I('post.type'):'';//搜索类型
+		$model = D('Blocks');
+		$model1 = D('Messages');
+		$model2 = D('Transactions');
+		$model3 = D('Accounts');
+		$p = I('post.p')?I('post.p'):1;
+		$_GET['p'] = $p;
+		if($p){
+			$limit = ($p-1)*10;
+		}else{
+			$limit = 0;
 		}
-		return $hex;
-	}
-
-	function Hex2String($hex){
-		$string='';
-		for ($i=0; $i < strlen($hex)-1; $i+=2){
-			$string .= chr(hexdec($hex[$i].$hex[$i+1]));
+		if(strlen($keys)>=64){
+			$where['block_id'] = $keys;
+		}elseif(strlen($keys)<64 &&strlen($keys)>0 ){
+			$where['block_num'] = $keys;	
 		}
-		return $string;
+		if($keys){
+			if(is_numeric($keys))$where1['message_id'] = intval($keys);
+			$where2['transaction_id'] = $keys;
+			$where3['name'] = new \MongoRegex("/$keys/"); 
+		}
+		
+		$blocks_num = count($model->where($where)->select());//blocks 数量
+		$this->assign('blocks_num',($blocks_num));
+		if($blocks_num>0 && $type=='' ){$type = 'Blocks';}
+		if(is_array($where1))$messages_num = count($model1->where($where1)->select());//Messages 数量
+		$this->assign('messages_num',($messages_num));
+		if($messages_num>0 && $type==''){$type = 'Messages';}
+		$transactions_num = count($model2->where($where2)->select());//Transactions 数量
+		$this->assign('transactions_num',($transactions_num));
+		if($transactions_num>0 && $type==''){$type = 'Transactions';}
+		$accounts_num = count($model3->where($where3)->select());//Accounts 数量
+		$this->assign('accounts_num',($accounts_num));
+		//var_dump($type);
+		if($accounts_num>0 && $type==''){$type = 'Accounts';}
+		if($type==''){
+			$type = 'Blocks';
+		}
+		//var_dump($where3);
+		if($type == 'Blocks'){
+			$list = $model->where($where)->order('block_num desc')->limit($limit,10)->select();
+			foreach($list as $k=>$v){
+				$v['timestamps'] = date('Y-m-d H:i:s',$v['timestamp']->sec);
+				$v['kb'] = substr(sprintf("%.3f",floatval($v['block_size']/1024)),0,-1);;
+				$newlist[] = $v;
+			}
+			$this->assign('list',$newlist);
+			$count = count($model->where($where)->select());
+			$page = new \Think\Page($count,10);
+			$show = $page->showj();
+			$this->assign('page',$show);
+			
+		}elseif($type == 'Messages'){
+			$list = $model1->where($where1)->order('createdTime desc')->limit($limit,10)->select();
+			foreach($list as $k=>$v){
+				$v['createdTimes'] = date('Y-m-d H:i:s',$v['createdTime']->sec);
+				$newlist[] = $v;
+			}
+			$this->assign('list',$newlist);
+			$count = count($model1->where($where1)->select());
+			$page = new \Think\Page($count,10);
+			$show = $page->showj();
+			$this->assign('page',$show);
+			
+		}elseif($type == 'Transactions'){
+			$count = count($model2->where($where2)->select());
+			$page = new \Think\Page($count,10);
+			$show = $page->showj();
+			$this->assign('page',$show);
+			$list = $model2->where($where2)->order('expiration desc')->limit($limit,10)->select();
+			foreach($list as $k=>$v){
+				$v['expirations'] = date('Y-m-d H:i:s',$v['expiration']->sec);
+				$v['messagess'] = array_values(get_object_vars($v['messages'][0]));
+				$newlist[] = $v;
+			}
+			
+			$this->assign('list',$newlist);
+		}elseif($type == 'Accounts'){
+			$list = $model3->where($where3)->limit($limit,10)->select();
+			//var_dump($model3->getlastsql());die;
+			
+			foreach($list as $k=>$v){
+				$v['createdTimes'] = date('Y-m-d H:i:s',$v['createdTime']->sec);
+				$newlist[] = $v;
+			}
+			$this->assign('list',$newlist);
+			$count = count($model3->where($where3)->select());
+			$page = new \Think\Page($count,10);
+			$show = $page->showj();
+			$this->assign('page',$show);
+		}
+		
+		
+		
+		$this->assign('type',$type);
+		$this->assign('keys',$keys);
+		
+		$this->display();
 	}
+	
+	
+	
  }

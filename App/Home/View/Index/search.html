@@ -1,0 +1,174 @@
+<include file="common/headr" />
+
+<body>
+	<include file="common/nav" />
+
+  <div id="admin_accounts" style="display: none" data=""></div>
+
+  
+
+  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1220px">
+
+    <div id="alert"><!----></div>
+ <include file="common/search" />
+
+<script>
+$(function(){
+	$("#page a").click(function(){
+		var p = $(this).attr('p');
+		$("input[name='p']").val(p);
+		$('#search_button').click();
+	});
+});
+</script>
+
+
+
+
+<div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
+
+	
+	<!-- 列表 start -->
+	<div id="fullStats">
+		<div class="card mt-3">
+		<eq name="type" value="Blocks">
+			<div class="card-body">
+				<h4 class="card-title">Block</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">ID</th>
+					<th aria-colindex="2" class="">Height</th>
+					<th aria-colindex="3" class="">Timestamp</th>
+					<!-- <th aria-colindex="4" class="">Parent ID</th> -->
+					<th aria-colindex="5" class="">Builder</th>
+					<!-- <th aria-colindex="6" class="">transaction_merkle_root</th> -->
+					<th aria-colindex="7" class="">Block Size</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<volist name="list" id="vo">
+					<tr role="row" class="">
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><{$vo.block_id}></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
+						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><{$vo.timestamps}></div></td>
+						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><{$vo.prev_block_id}></div></td> -->
+						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><{$vo.builder_account_name}></div></td>
+						<!-- <td aria-colindex="6" data-label="transaction_merkle_root" role="cell" class=""><div><{$vo.transaction_merkle_root}></div></td> -->
+						<td aria-colindex="5" data-label="block_size" role="cell" class=""><div><{$vo.kb}>KB</div></td>
+					</tr>
+					</volist>
+				</tbody>
+				</table>
+			</div>
+			</eq>
+			<eq name="type" value="Messages">
+			<div class="card-body">
+				<h4 class="card-title">Messages</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">Message ID</th>
+					<th aria-colindex="2" class="">Transaction ID</th>
+					<th aria-colindex="3" class="">Handler Account Name</th>
+					<th aria-colindex="4" class="">Type</th>
+					<th aria-colindex="5" class="">CreatedTime</th>
+					<th aria-colindex="6" class="">Authorization</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<volist name="list" id="vo">
+					<tr role="row" class="">
+						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><{$vo.message_id}></div></td>
+						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<{:U('index/paylist',array('transaction'=>$vo['transaction_id']))}>"><{$vo.transaction_id}></a></div></td>
+						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><{$vo.handler_account_name}></div></td>
+						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><{$vo.type}></div></td>
+						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><{$vo.createdTimes}></div></td>
+						<td aria-colindex="6" data-label="Authorization" role="cell" class=""><div><{$vo.authorization.0.account}></div></td>
+					</tr>
+					</volist>
+				</tbody>
+				</table>
+			</div>
+			</eq>
+			<eq name="type" value="Transactions">
+			<div class="card-body">
+				<h4 class="card-title">Transactions</h4>
+				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
+					<thead class="">
+						<tr>
+							<th aria-colindex="1" class="">Transaction ID</th>
+							<th aria-colindex="2" class="">Transaction Index</th>
+							<th aria-colindex="3" class="">Block ID</th>
+							<!-- <th aria-colindex="4" class="">ref_block_num</th> -->
+							<!-- <th aria-colindex="5" class="">ref_block_prefix</th> -->
+							<th aria-colindex="6" class="">Expiration</th>
+							<th aria-colindex="7" class="">Messages</th>
+							<th aria-colindex="8" class="">Scope</th>
+							<!-- <th aria-colindex="9" class="">signatures</th> -->
+						</tr>
+					</thead><!---->
+					<tbody role="rowgroup" class=""><!---->
+					<notempty name="list">
+					<volist name="list" id="vo">
+						<tr role="row" class="">
+							<td aria-colindex="1" data-label="Transaction id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.transaction_id}></a></div></td>
+							<td aria-colindex="2" data-label="Transaction index" role="cell" class=""><div><font class="text-success"><{$vo.transaction_index}></font></div></td>
+							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
+							<!-- <td aria-colindex="4" data-label="ref_block_num" role="cell" class=""><div><{$vo.ref_block_num}></div></td> -->
+							<!-- <td aria-colindex="5" data-label="ref_block_prefix" role="cell" class=""><div><{$vo.ref_block_prefix}></div></td> -->
+							<td aria-colindex="6" data-label="Expiration" role="cell" class=""><div><{$vo.expirations}></div></td>
+							<td aria-colindex="7" data-label="Messages" role="cell" class=""><div><a href="<{:U('index/message',array('id'=>$vo['messagess'][0]))}>" target="_self" class="address-tag"><{$vo.messagess.0}></a></div></td>
+							<td aria-colindex="8" data-label="Scope" role="cell" class=""><div><a href="<{:U('index/address',array('name'=>$vo['scope'][0]))}>" target="_self"><{$vo.scope.0}></a></div></td>
+							<!-- <td aria-colindex="9" data-label="signatures" role="cell"><div class="address-tag"><{$vo.signatures.0}></div></td> -->
+						</tr>
+					</volist>
+					</notempty>
+					</tbody>
+				</table>
+			</div>
+			</eq>
+			<eq name="type" value="Accounts">
+			<div class="card-body">
+				<h4 class="card-title">Accounts</h4>
+				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
+					<thead class="">
+						<tr>
+							<th aria-colindex="1" class="">Name</th>
+							<!-- <th aria-colindex="2" class="">xmx_token</th> -->
+							<!-- <th aria-colindex="3" class="">staked_token</th> -->
+							<!-- <th aria-colindex="4" class="">unstaking_token</th> -->
+							<th aria-colindex="5" class="">Created Time</th>							
+						</tr>
+					</thead><!---->
+					<tbody role="rowgroup" class=""><!---->
+					<notempty name="list">
+					<volist name="list" id="vo">
+						<tr role="row" class="">
+							<td aria-colindex="1" data-label="name" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.name}></a></div></td>
+							<!-- <td aria-colindex="2" data-label="xmx_token" role="cell" class=""><div><font class="text-success"><{$vo.xmx_token}></font></div></td> -->
+							<!-- <td aria-colindex="3" data-label="staked_token" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.staked_token}></a></div></td> -->
+							<!-- <td aria-colindex="4" data-label="unstaking_token" role="cell" class=""><div><{$vo.unstaking_token}></div></td> -->
+							<td aria-colindex="5" data-label="createdTime" role="cell" class=""><div><{$vo.createdTimes}></div></td>
+						</tr>
+					</volist>
+					</notempty>
+					</tbody>
+				</table>
+			</div>
+			</eq>
+			<div id="page">
+				<{$page}>
+			</div>
+		</div>
+	</div>
+	<!-- 列表 end -->
+	
+
+  </div>
+
+
+
+</body></html>

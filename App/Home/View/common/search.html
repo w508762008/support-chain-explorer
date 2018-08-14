@@ -1,16 +1,36 @@
+<style>
+#search .row{margin-left:1.5px;}
+.lable{background-color: #17a2b8;color: #fff;margin-right: 13px;padding: 7px 8px;border-radius: 3px;cursor:pointer;}
+</style>
  <div id="search" class="card mb-3">
   <div class="card-body">
-  
+	<form action="<{:U('index/search')}>" method="post" id="serach">
 	<div role="group" class="input-group">
-	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<{$keys}>" class="form-control">
+	<input id="query" type="text" required="required" name="key" placeholder="Example query: &#39;19&#39; for  blook num 19; &#39;xmax&#39; for account name; or search block id / tx id / message id" aria-required="true" value="<{$keys}>" class="form-control" />
+	<input type="hidden" name="keys" value="<{$keys}>" />
+	<input type="hidden" name="p" value="<{$p}>" />
+	<input type="hidden" name="type" value="<{$type}>" />
 	<div class="input-group-append submit"><button id="search_button" type="button" class="btn btn-primary">Search</button></div>
 	</div>
- 
+	</form>
+	
+	<div class="row">
+		<notempty name="blocks_num"><div tp="Blocks" <eq name="type" value="Blocks">style="background-color:#ccc;"</eq> class="lable">Blocks(<{$blocks_num}>)</div></notempty>
+		<notempty name="messages_num"><div tp="Messages" <eq name="type" value="Messages">style="background-color:#ccc;"</eq> class="lable">Messages(<{$messages_num}>)</div></notempty>
+		<notempty name="transactions_num"><div tp="Transactions" <eq name="type" value="Transactions">style="background-color:#ccc;"</eq> class="lable">Transactions(<{$transactions_num}>)</div></notempty>
+		<notempty name="accounts_num"><div tp="Accounts" <eq name="type" value="Accounts">style="background-color:#ccc;"</eq> class="lable">Accounts(<{$accounts_num}>)</div></notempty>
+	</div>
   </div>
   </div>
 
 <script >
 window.onload = function () { 
+	
+	$(".row .lable").click(function(){
+		$("input[name='type']").val($(this).attr('tp'));
+		$("input[name='p']").val(1);
+		$('#search_button').click();
+	});
 
 	$('#query').bind('keyup', function(event) {
         if (event.keyCode == "13") {
@@ -20,7 +40,16 @@ window.onload = function () {
     });
  
 	$('.submit').click(function(){
-		var info = $("#query").val();
+		var key = $("input[name='key']").val();
+		var keys = $("input[name='keys']").val();
+		if(key != keys){
+			$("input[name='keys']").val(key);
+			$("input[name='p']").val(1);
+			$("input[name='type']").val('');
+		}
+		
+		$('#serach').submit();
+		/* var info = $("#query").val();
 		$.post("<{:U('Index/query')}>",{data:info},function(rr){
 			var r = rr.list;
 			if(rr.type == 1){
@@ -44,7 +73,7 @@ window.onload = function () {
 				$('#block').show();
 				$('.titles').html('Block');
 			}
-		  },'json');
+		  },'json'); */
 	});
 	
  }
