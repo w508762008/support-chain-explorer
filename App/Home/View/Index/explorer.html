@@ -10,53 +10,15 @@
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
 
     <div id="alert"><!----></div>
-  <div id="search" class="card mb-3">
-  <div class="card-body">
-  
-	<div role="group" class="input-group">
-	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<{$keys}>" class="form-control">
-	<div class="input-group-append submit"><button id="search_button" type="button" class="btn btn-primary">Search</button></div>
-	</div>
- 
-  </div>
-  </div>
+  <include file="common/search" />
 
 <script>
-window.onload = function () { 
-	$('#query').bind('keyup', function(event) {
-        if (event.keyCode == "13") {
-            //回车执行查询
-            $('#search_button').click();
-        }
-    });
- 
-	$('.submit').click(function(){
-		var info = $("#query").val();
-		$.post("<{:U('Index/query')}>",{data:info},function(rr){
-			var r = rr.list;
-			if(rr.type == 1){
-				var str = '<div class="row"><div class="col-sm-3">Name: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.name+'</a></div></div><div class="row"><div class="col-sm-3">Created Time: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.createdTimes+'</a></div></div>';
-					$('.container').html(str);
-					$('.titles').html('Accounts');
-			}else if(rr.type == 2){
-				var str = '<div class="row"><div class="col-sm-3">Transaction ID: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.transaction_id+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Index: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.transaction_index+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Block ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Expiration: </div> <div class="col-sm-9">'+r.expiration+'</div></div>';
-					$('.container').html(str);
-					$('.titles').html('Transactions');
-			}else if(rr.type == 3){
-				if(r.block_id){
-					var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Merkle Root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
-					$('.container').html(str)
-				}else{
-					var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
-					$('.container').html(str)
-				}
-				$('.titles').html('Block');
-			}
-		  },'json');
-	})
-	$('.navbar-nav').find("a").removeClass('active');
+$(function(){
+$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(0).find("a").addClass('active');
- }
+})
+	
+
 </script>
 
 
@@ -64,22 +26,55 @@ window.onload = function () {
 
 <div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
 
-	<div id="block">
+	<div id="block" style="display:none;">
 		<div class="card key-value-box">
 			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
 				<div class="container">
-					<notempty name="data">
-						<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);"><{$data.block_id}></a></div></div>
-						<div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <{$data.block_num}><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>
-						<div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="/block/<{$data.prev_block_id}>"><{$data.prev_block_id}></a></div></div>
-						<div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9"><{$data.timestamps}> </div></div>
-						<div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a href="/address/<{$data.builder_account_name}>"><{$data.builder_account_name}></a></div></div>
-						<div class="row"><div class="col-sm-3">Transaction Merkle Root: </div> <div class="col-sm-9"><{$data.transaction_merkle_root}></div></div>
-					</notempty>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<!-- 列表 start -->
+	<div id="fullStats">
+		<div class="card mt-3">
+			<div class="card-body">
+				<h4 class="card-title">Block</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">ID</th>
+					<th aria-colindex="2" class="">Height</th>
+					<th aria-colindex="3" class="">Timestamp</th>
+					<!-- <th aria-colindex="4" class="">Parent ID</th> -->
+					<th aria-colindex="5" class="">Builder</th>
+					<!-- <th aria-colindex="6" class="">transaction_merkle_root</th> -->
+					<th aria-colindex="7" class="">Block Size</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<volist name="list" id="vo">
+					<tr role="row" class="">
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><{$vo.block_id}></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
+						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><{$vo.timestamps}></div></td>
+						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><{$vo.prev_block_id}></div></td> -->
+						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><{$vo.builder_account_name}></div></td>
+						<!-- <td aria-colindex="6" data-label="transaction_merkle_root" role="cell" class=""><div><{$vo.transaction_merkle_root}></div></td> -->
+						<td aria-colindex="5" data-label="block_size" role="cell" class=""><div><{$vo.kb}>KB</div></td>
+					</tr>
+					</volist>
+				</tbody>
+				</table>
+			</div>
+			<div id="page">
+				<{$page}>
+			</div>
+		</div>
+	</div>
+	<!-- 列表 end -->
 
   </div>
 

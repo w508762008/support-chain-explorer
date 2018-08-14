@@ -30,10 +30,10 @@
 		<a href="/" target="_self" class="navbar-brand">XMAX<span class="brand-subtitle">beta</span></a>
 		<div id="nav_collapse" class="navbar-collapse collapse" style="display: none;">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a href="<?php echo U('index/explorer');?>" target="_self" class="nav-link ">blocks</a></li>
-				<li class="nav-item"><a href="<?php echo U('index/fylist');?>" target="_self" class="nav-link">Stats</a></li>
-				<li class="nav-item"><a href="<?php echo U('index/paylist');?>" target="_self" class="nav-link">transactions</a></li>
-				<li class="nav-item"><a href="<?php echo U('index/account');?>" target="_self" class="nav-link">accounts</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/explorer');?>" target="_self" class="nav-link ">Blocks</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/fylist');?>" target="_self" class="nav-link">Messages</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/paylist');?>" target="_self" class="nav-link">Transactions</a></li>
+				<li class="nav-item"><a href="<?php echo U('index/account');?>" target="_self" class="nav-link">Accounts</a></li>
 			</ul>
 			<!-- <ul class="navbar-nav ml-auto">
 				<li id="__BVID__4" class="nav-item b-nav-dropdown dropdown" title="" data-original-title="Pick the cluster to connect">
@@ -60,7 +60,7 @@
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
 
     <div id="alert"><!----></div>
-  <div id="search" class="card mb-3">
+   <div id="search" class="card mb-3">
   <div class="card-body">
   
 	<div role="group" class="input-group">
@@ -71,8 +71,9 @@
   </div>
   </div>
 
-<script>
+<script >
 window.onload = function () { 
+
 	$('#query').bind('keyup', function(event) {
         if (event.keyCode == "13") {
             //回车执行查询
@@ -85,28 +86,39 @@ window.onload = function () {
 		$.post("<?php echo U('Index/query');?>",{data:info},function(rr){
 			var r = rr.list;
 			if(rr.type == 1){
-				var str = '<div class="row"><div class="col-sm-3">name: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.name+'</a></div></div><div class="row"><div class="col-sm-3">xmx_token: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.xmx_token+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">staked_token: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.staked_token+'</a></div></div><div class="row"><div class="col-sm-3">unstaking_token: </div> <div class="col-sm-9">'+r.unstaking_token+' </div></div><div class="row"><div class="col-sm-3">createdTime: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.createdTimes+'</a></div></div>';
+				var str = '<div class="row"><div class="col-sm-3">Name: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.name+'</a></div></div><div class="row"><div class="col-sm-3">Created Time: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.createdTimes+'</a></div></div>';
+					$('#block').show();
 					$('.container').html(str);
 					$('.titles').html('Accounts');
 			}else if(rr.type == 2){
-				var str = '<div class="row"><div class="col-sm-3">transaction_id: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.transaction_id+'</a></div></div><div class="row"><div class="col-sm-3">transaction_index: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.transaction_index+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">block_id: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">ref_block_num: </div> <div class="col-sm-9">'+r.ref_block_num+' </div></div><div class="row"><div class="col-sm-3">ref_block_prefix: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.ref_block_prefix+'</a></div></div><div class="row"><div class="col-sm-3">expiration: </div> <div class="col-sm-9">'+r.expiration+'</div></div>';
+				var str = '<div class="row"><div class="col-sm-3">Transaction ID: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.transaction_id+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Index: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.transaction_index+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Block ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Expiration: </div> <div class="col-sm-9">'+r.expiration+'</div></div>';
+					$('#block').show();
 					$('.container').html(str);
 					$('.titles').html('Transactions');
 			}else if(rr.type == 3){
 				if(r.block_id){
-					var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
-					$('.container').html(str)
+					var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Merkle Root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
+					$('.container').html(str);
 				}else{
 					var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
-					$('.container').html(str)
+					$('.container').html(str);
 				}
+				$('#block').show();
 				$('.titles').html('Block');
 			}
 		  },'json');
-	})
-	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(0).find("a").addClass('active');
+	});
+	
  }
+</script>
+
+<script>
+$(function(){
+$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(0).find("a").addClass('active');
+})
+	
+
 </script>
 
 
@@ -114,20 +126,53 @@ window.onload = function () {
 
 <div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
 
-	<div id="block">
+	<div id="block" style="display:none;">
 		<div class="card key-value-box">
 			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
 				<div class="container">
-					<?php if(!empty($data)): ?><div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);"><?php echo ($data["block_id"]); ?></a></div></div>
-						<div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <?php echo ($data["block_num"]); ?><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>
-						<div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="/block/<?php echo ($data["prev_block_id"]); ?>"><?php echo ($data["prev_block_id"]); ?></a></div></div>
-						<div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9"><?php echo ($data["timestamps"]); ?> </div></div>
-						<div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="/address/<?php echo ($data["builder_account_name"]); ?>"><?php echo ($data["builder_account_name"]); ?></a></div></div>
-						<div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9"><?php echo ($data["transaction_merkle_root"]); ?></div></div><?php endif; ?>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<!-- 列表 start -->
+	<div id="fullStats">
+		<div class="card mt-3">
+			<div class="card-body">
+				<h4 class="card-title">Block</h4>
+				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
+				<thead class="">
+				<tr>
+					<th aria-colindex="1" class="">ID</th>
+					<th aria-colindex="2" class="">Height</th>
+					<th aria-colindex="3" class="">Timestamp</th>
+					<!-- <th aria-colindex="4" class="">Parent ID</th> -->
+					<th aria-colindex="5" class="">Builder</th>
+					<!-- <th aria-colindex="6" class="">transaction_merkle_root</th> -->
+					<th aria-colindex="7" class="">Block Size</th>
+					
+				</tr>
+				</thead><!---->
+				<tbody role="rowgroup" class=""><!---->
+					<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><?php echo ($vo["block_id"]); ?></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<?php echo U('index/explorer',array('block'=>$vo['block_num']));?>"><?php echo ($vo["block_num"]); ?></a></div></td>
+						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><?php echo ($vo["timestamps"]); ?></div></td>
+						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><?php echo ($vo["prev_block_id"]); ?></div></td> -->
+						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><?php echo ($vo["builder_account_name"]); ?></div></td>
+						<!-- <td aria-colindex="6" data-label="transaction_merkle_root" role="cell" class=""><div><?php echo ($vo["transaction_merkle_root"]); ?></div></td> -->
+						<td aria-colindex="5" data-label="block_size" role="cell" class=""><div><?php echo ($vo["kb"]); ?>KB</div></td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				</tbody>
+				</table>
+			</div>
+			<div id="page">
+				<?php echo ($page); ?>
+			</div>
+		</div>
+	</div>
+	<!-- 列表 end -->
 
   </div>
 

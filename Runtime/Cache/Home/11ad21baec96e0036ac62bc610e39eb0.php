@@ -22,6 +22,7 @@
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="/l/Public/static/translateelement.css"></head>
 
 <script type="text/javascript" async="" src="/l/Public/static/jquery.js"></script>
+
 <body>
 	<div id="nav">
 	<nav id="nav" class="navbar navbar-dark bg-info navbar-expand-md">
@@ -51,114 +52,67 @@
 		</div>
 	</nav>
 	</div>
-	
-	<script>
-	$(function(){
-	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(1).find("a").addClass('active');
-	});
-	</script>
 
   <div id="admin_accounts" style="display: none" data=""></div>
 
   
 
-  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
-	 <div id="search" class="card mb-3">
+  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1220px">
+
+    <div id="alert"><!----></div>
+  <div id="search" class="card mb-3" style="display:none;">
   <div class="card-body">
-  
+  <form>
 	<div role="group" class="input-group">
 	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<?php echo ($keys); ?>" class="form-control">
-	<div class="input-group-append submit"><button id="search_button" type="button" class="btn btn-primary">Search</button></div>
+	<div class="input-group-append submit"><button type="button" class="btn btn-primary">Search</button></div>
 	</div>
- 
+  </form>
   </div>
   </div>
 
-<script >
+<script>
 window.onload = function () { 
-
-	$('#query').bind('keyup', function(event) {
-        if (event.keyCode == "13") {
-            //回车执行查询
-            $('#search_button').click();
-        }
-    });
- 
 	$('.submit').click(function(){
 		var info = $("#query").val();
-		$.post("<?php echo U('Index/query');?>",{data:info},function(rr){
-			var r = rr.list;
-			if(rr.type == 1){
-				var str = '<div class="row"><div class="col-sm-3">Name: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.name+'</a></div></div><div class="row"><div class="col-sm-3">Created Time: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.createdTimes+'</a></div></div>';
-					$('#block').show();
-					$('.container').html(str);
-					$('.titles').html('Accounts');
-			}else if(rr.type == 2){
-				var str = '<div class="row"><div class="col-sm-3">Transaction ID: </div><div class="col-sm-9"><a href="'+r.url+'">'+r.transaction_id+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Index: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.transaction_index+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Block ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Expiration: </div> <div class="col-sm-9">'+r.expiration+'</div></div>';
-					$('#block').show();
-					$('.container').html(str);
-					$('.titles').html('Transactions');
-			}else if(rr.type == 3){
-				if(r.block_id){
-					var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a href="javascript:void(0);">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">Transaction Merkle Root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
-					$('.container').html(str);
-				}else{
-					var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
-					$('.container').html(str);
-				}
-				$('#block').show();
-				$('.titles').html('Block');
+		$.post("<?php echo U('Index/query');?>",{data:info},function(r){
+			
+			if(r.block_id){
+				var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="/block/'+r.prev_block_id+'">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="/address/'+r.builder_account_name+'">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
+				$('.container').html(str)
+			}else{
+				var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
+				$('.container').html(str)
 			}
 		  },'json');
-	});
+	})
 	
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(3).find("a").addClass('active');
  }
 </script>
-	<div id="block" style="display:none;">
+
+
+
+
+<div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
+
+	
+	<div id="block">
 		<div class="card key-value-box">
-			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
+			<div class="card-body"><h4 class="card-title">Transactions</h4><hr>
 				<div class="container">
-					
+					<?php if(!empty($data)): ?><div class="row"><div class="col-sm-3">Transaction id: </div><div class="col-sm-9"><a href="javascript:void(0);"><?php echo ($data["transaction_id"]); ?></a></div></div>
+						<div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> <?php echo ($data["authorization"]["0"]["account"]); ?><a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div>
+						<div class="row"><div class="col-sm-3">Handler Account Name: </div> <div class="col-sm-9"><?php echo ($data["handler_account_name"]); ?></div></div>
+						<div class="row"><div class="col-sm-3">Type: </div> <div class="col-sm-9"><?php echo ($data["type"]); ?> </div></div>
+						<div class="row"><div class="col-sm-3">Created Time: </div> <div class="col-sm-9"><?php echo ($data["createdTimes"]); ?></div></div>
+						<?php if(!empty($datas)): echo ($datas); endif; endif; ?>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-    <div id="alert"><!----></div>
-	<div id="fullStats">
-		<div class="card mt-3">
-			<div class="card-body">
-				<h4 class="card-title">Messages</h4>
-				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
-				<thead class="">
-				<tr>
-					<th aria-colindex="1" class="">Message ID</th>
-					<th aria-colindex="2" class="">Transaction ID</th>
-					<th aria-colindex="3" class="">Handler Account Name</th>
-					<th aria-colindex="4" class="">Type</th>
-					<th aria-colindex="5" class="">CreatedTime</th>
-					<th aria-colindex="6" class="">Authorization</th>
-					
-				</tr>
-				</thead><!---->
-				<tbody role="rowgroup" class=""><!---->
-					<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
-						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><?php echo ($vo["message_id"]); ?></div></td>
-						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<?php echo U('index/paylist',array('transaction'=>$vo['transaction_id']));?>"><?php echo ($vo["transaction_id"]); ?></a></div></td>
-						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><?php echo ($vo["handler_account_name"]); ?></div></td>
-						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><?php echo ($vo["type"]); ?></div></td>
-						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><?php echo ($vo["createdTimes"]); ?></div></td>
-						<td aria-colindex="6" data-label="Authorization" role="cell" class=""><div><?php echo ($vo["authorization"]["0"]["account"]); ?></div></td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-				</tbody>
-				</table>
-			</div>
-			<div id="page">
-				<?php echo ($page); ?>
-			</div>
-		</div>
-	</div>
 
   </div>
 

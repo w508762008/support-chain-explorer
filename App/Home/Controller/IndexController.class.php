@@ -21,21 +21,41 @@ class IndexController extends Controller {
     }
 	public function explorer(){ //块数据
 		$block = I('get.block');
-		if($block){
+		$p = I('get.p')?I('get.p'):1;
+		if($block || $p){
 			$model = D('Blocks');
 			//$model = new \MongoModel('Blocks');
-			if(strlen($block)>=64){
+			if(strlen(trim($block))>=64){
 				$where['block_id'] = $block;
-			}elseif(strlen($block)<64 &&strlen($block)>0 ){
-				$where['block_num'] = $block;	
+				$this->assign('keys',$block);
+			}elseif(strlen(trim($block))<64 &&strlen(trim($block))>0 ){
+				$where['block_num'] = $block;
+				$this->assign('keys',$block);				
 			}
-			$a = $model->where($where)->order('block_num asc')->select();
-			foreach($a as $k=>$v){
-				$data = $v;
-				$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
+			
+			if($p){
+				$limit = ($p-1)*10;
+			}else{
+				$limit = 0;
 			}
-			$this->assign('data',$data);
-			$this->assign('keys',$block);
+			$list = $model->where($where)->order('block_num desc')->limit($limit,10)->select();
+			foreach($list as $k=>$v){
+				$v['timestamps'] = date('Y-m-d H:i:s',$v['timestamp']->sec);
+				$v['kb'] = substr(sprintf("%.3f",floatval($v['block_size']/1024)),0,-1);;
+				$newlist[] = $v;
+			}
+			$this->assign('list',$newlist);
+			$count = count($model->select());
+			$page = new \Think\Page($count,10);
+			$show = $page->show();
+			$this->assign('page',$show);
+			// $a = $model->where($where)->order('block_num asc')->select();
+			// foreach($a as $k=>$v){
+				// $data = $v;
+				// $data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
+			// }
+			//$this->assign('data',$data);
+			
 		}
 		$this->display();
 	}
@@ -79,8 +99,8 @@ class IndexController extends Controller {
 		
         
 	}
-	public function fylist(){		//块数据列表
-		$model = D('Blocks');
+	public function fylist(){		//数据列表
+		$model = D('Messages');
 		$p = I('get.p');
 		
 		if($p){
@@ -88,11 +108,11 @@ class IndexController extends Controller {
 		}else{
 			$limit = 0;
 		}
-		$list = $model->order('block_num desc')->limit($limit,10)->select();
+		$list = $model->order('createdTime desc')->limit($limit,10)->select();
 		//$list = $model->query("XMAX2.blocks.find({}).sort({'block_num':1}).skip(0).limit(10)");
 		
 		foreach($list as $k=>$v){
-			$v['timestamps'] = date('Y-m-d H:i:s',$v['timestamp']->sec);
+			$v['createdTimes'] = date('Y-m-d H:i:s',$v['createdTime']->sec);
 			$newlist[] = $v;
 		}
 		$this->assign('list',$newlist);
@@ -110,7 +130,10 @@ class IndexController extends Controller {
 		$name = I('get.name');
 		$model = D('Accounts');
 		if($name){
-			$a = $model->where(array('name'=>$name))->select();
+			$where['name'] = $name; 
+			
+			$a = $model->where($where)->select();
+			//var_dump($a);die;
 			foreach($a as $k=>$v){
 				$data = $v;
 				$data['createdTimes'] = date('Y-m-d H:i:s',$data['createdTime']->sec);
@@ -129,7 +152,10 @@ class IndexController extends Controller {
 		}else{
 			$limit = 0;
 		}
-		$list = $model->limit($limit,10)->select();
+		if($name){
+			$where['name'] = new \MongoRegex("/$name/"); 
+		}
+		$list = $model->where($where)->limit($limit,10)->select();
 		//var_dump($model->getlastsql());die;
 		
 		foreach($list as $k=>$v){

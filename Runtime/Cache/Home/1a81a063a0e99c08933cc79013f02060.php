@@ -22,6 +22,7 @@
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="/l/Public/static/translateelement.css"></head>
 
 <script type="text/javascript" async="" src="/l/Public/static/jquery.js"></script>
+
 <body>
 	<div id="nav">
 	<nav id="nav" class="navbar navbar-dark bg-info navbar-expand-md">
@@ -51,20 +52,15 @@
 		</div>
 	</nav>
 	</div>
-	
-	<script>
-	$(function(){
-	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(1).find("a").addClass('active');
-	});
-	</script>
 
   <div id="admin_accounts" style="display: none" data=""></div>
 
   
 
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
-	 <div id="search" class="card mb-3">
+
+    <div id="alert"><!----></div>
+  <div id="search" class="card mb-3">
   <div class="card-body">
   
 	<div role="group" class="input-group">
@@ -124,41 +120,38 @@ window.onload = function () {
 			</div>
 		</div>
 	</div>
+
+<script>
+$(function(){
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(3).find("a").addClass('active');
+ }
+</script>
+
+
+
+
+<div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
+
 	
-    <div id="alert"><!----></div>
-	<div id="fullStats">
-		<div class="card mt-3">
+	<div id="account">
+		<div class="card key-value-box mb-3">
 			<div class="card-body">
-				<h4 class="card-title">Messages</h4>
-				<table id="__BVID__11" role="table" aria-busy="false" aria-colcount="7" class="table b-table table-hover b-table-stacked-sm" aria-rowcount="64"><!----><!---->
-				<thead class="">
-				<tr>
-					<th aria-colindex="1" class="">Message ID</th>
-					<th aria-colindex="2" class="">Transaction ID</th>
-					<th aria-colindex="3" class="">Handler Account Name</th>
-					<th aria-colindex="4" class="">Type</th>
-					<th aria-colindex="5" class="">CreatedTime</th>
-					<th aria-colindex="6" class="">Authorization</th>
-					
-				</tr>
-				</thead><!---->
-				<tbody role="rowgroup" class=""><!---->
-					<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="">
-						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><?php echo ($vo["message_id"]); ?></div></td>
-						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<?php echo U('index/paylist',array('transaction'=>$vo['transaction_id']));?>"><?php echo ($vo["transaction_id"]); ?></a></div></td>
-						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><?php echo ($vo["handler_account_name"]); ?></div></td>
-						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><?php echo ($vo["type"]); ?></div></td>
-						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><?php echo ($vo["createdTimes"]); ?></div></td>
-						<td aria-colindex="6" data-label="Authorization" role="cell" class=""><div><?php echo ($vo["authorization"]["0"]["account"]); ?></div></td>
-					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-				</tbody>
-				</table>
-			</div>
-			<div id="page">
-				<?php echo ($page); ?>
+				<h4 class="card-title">Account</h4><hr>
+				<div class="container">
+					<div class="row"><div class="col-sm-4">name: </div> <div class="col-sm-8"><?php echo ($data["name"]); ?></div></div>
+					<!-- <div class="row"><div class="col-sm-4">xmx_token: </div> <div class="col-sm-8"><?php echo ($data["xmx_token"]); ?></div></div>
+					<div class="row"><div class="col-sm-4">staked_token: </div> <div class="col-sm-8"><?php echo ($data["staked_token"]); ?></div></div>
+					<div class="row"><div class="col-sm-4">unstaking_token: </div> <div class="col-sm-8"><?php echo ($data["unstaking_token"]); ?></div></div> -->
+					<div class="row"><div class="col-sm-4">createdTime: </div> <div class="col-sm-8"><?php echo ($data["createdTimes"]); ?></div></div>
+				</div>
 			</div>
 		</div>
+		
 	</div>
+	
+	
+	
 
   </div>
 

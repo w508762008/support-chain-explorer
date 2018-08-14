@@ -10,36 +10,22 @@
   <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1220px">
 
     <div id="alert"><!----></div>
-  <div id="search" class="card mb-3" style="display:none;">
-  <div class="card-body">
-  <form>
-	<div role="group" class="input-group">
-	<input id="query" type="text" required="required" placeholder="Example query: &#39;19&#39; for root block 19; &#39;3/10&#39; for shard block 10 on shard 3; or search address / block id / tx id" aria-required="true" value="<{$keys}>" class="form-control">
-	<div class="input-group-append submit"><button type="button" class="btn btn-primary">Search</button></div>
+  <include file="common/search" />
+	<div id="block" style="display:none;">
+		<div class="card key-value-box">
+			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
+				<div class="container">
+					
+				</div>
+			</div>
+		</div>
 	</div>
-  </form>
-  </div>
-  </div>
 
 <script>
-window.onload = function () { 
-	$('.submit').click(function(){
-		var info = $("#query").val();
-		$.post("<{:U('Index/query')}>",{data:info},function(r){
-			
-			if(r.block_id){
-				var str = '<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><a href="javascript:void(0);">'+r.block_id+'</a></div></div><div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><a style="display:none;" href="javascript:void(0);"> &lt; prev</a> '+r.block_num+'<a  style="display:none;" href="/block/0/'+(r.block_num-1)+'">next &gt;</a></div></div><div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="/block/'+r.prev_block_id+'">'+r.prev_block_id+'</a></div></div><div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9">'+r.timestamps+' </div></div><div class="row"><div class="col-sm-3">builder: </div> <div class="col-sm-9"><a href="/address/'+r.builder_account_name+'">'+r.builder_account_name+'</a></div></div><div class="row"><div class="col-sm-3">transaction_merkle_root: </div> <div class="col-sm-9">'+r.transaction_merkle_root+'</div></div>';
-				$('.container').html(str)
-			}else{
-				var str = '<div class="row" style="color:#856404;background-color:#fff3cd;border-color:#ffeeba;line-height:36px;"><div class="col-sm-12">Nothing is found for your query</div></div>';
-				$('.container').html(str)
-			}
-		  },'json');
-	})
-	
+$(function(){
 	$('.navbar-nav').find("a").removeClass('active');
 	$('.navbar-nav li').eq(2).find("a").addClass('active');
- }
+});
 </script>
 
 
