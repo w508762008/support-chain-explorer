@@ -17597,3 +17597,2176 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
 
+[ 2018-08-14T19:58:44+08:00 ] ::1 /l/index.php/index/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.find({"block_num":0}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where1 C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 270 行.
+NOTIC: [8] Undefined variable: messages_num C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 271 行.
+NOTIC: [8] Undefined variable: messages_num C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 272 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.find({"transaction_id":"xm"}) [ RunTime:0.0000s ]
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.find({"name":{"regex":"xm","flags":""}}) [ RunTime:0.0000s ]
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.find({"block_num":0}).sort({"block_num":-1}).limit(10) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: newlist C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 291 行.
+SQL: XMAX2.Blocks.find({"block_num":0}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\25350ed65d45019c5a35a45d2b636895.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-08-14T20:02:53+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2018-08-14T20:02:58+08:00 ] ::1 /l/index.php/index/paylist/transaction/c31e27795a3f1188673cf9cfa8eccdf4732f7e860e8eebc3b86356807d5cf5a7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.find({"transaction_id":"c31e27795a3f1188673cf9cfa8eccdf4732f7e860e8eebc3b86356807d5cf5a7"}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-08-14T20:03:02+08:00 ] ::1 /l/index.php/index/message/id/5b7166ffa9dd1a89f0002176.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({"_id":{"$id":"5b7166ffa9dd1a89f0002176"}}).sort({"createdTime":1}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\11ad21baec96e0036ac62bc610e39eb0.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-08-14T20:03:08+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 192 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-08-14T20:03:16+08:00 ] ::1 /l/index.php/index/explorer/block/00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621"}).sort({"block_num":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-08-14T20:04:21+08:00 ] ::1 /l/index.php/index/explorer/block/553.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_num":553}).sort({"block_num":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-08-14T20:04:26+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2018-08-14T20:04:30+08:00 ] ::1 /l/index.php/index/paylist/transaction/c31e27795a3f1188673cf9cfa8eccdf4732f7e860e8eebc3b86356807d5cf5a7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0001s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.find({"transaction_id":"c31e27795a3f1188673cf9cfa8eccdf4732f7e860e8eebc3b86356807d5cf5a7"}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-08-14T20:04:36+08:00 ] ::1 /l/index.php/index/message/id/5b7166ffa9dd1a89f0002176.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({"_id":{"$id":"5b7166ffa9dd1a89f0002176"}}).sort({"createdTime":1}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\11ad21baec96e0036ac62bc610e39eb0.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-08-14T20:04:51+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2018-08-14T20:04:56+08:00 ] ::1 /l/index.php/Index/fylist/p/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).skip(260).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2018-08-14T20:05:00+08:00 ] ::1 /l/index.php/Index/fylist/p/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).skip(250).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2018-08-14T20:05:13+08:00 ] ::1 /l/index.php/index/paylist/transaction/e7b10476221423e06a87d6bbfcee9a765f502c88ee132f9aa5686b26bd539a86.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0001s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0001s ]
+SQL: XMAX2.Transactions.find({"transaction_id":"e7b10476221423e06a87d6bbfcee9a765f502c88ee132f9aa5686b26bd539a86"}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+NOTIC: [8] Undefined offset: 0 C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 195 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-08-14T20:05:16+08:00 ] ::1 /l/index.php/index/message/id/5b7164d4a9dd1a89f0001ca4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({"_id":{"$id":"5b7164d4a9dd1a89f0001ca4"}}).sort({"createdTime":1}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\11ad21baec96e0036ac62bc610e39eb0.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2018-08-14T20:05:30+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 192 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-08-14T20:05:50+08:00 ] ::1 /l/index.php/index/address/name/testerb.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0001s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Accounts.find({"name":"testerb"}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-08-14T20:05:54+08:00 ] ::1 /l/index.php/index/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0001s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: name C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 155 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 158 行.
+SQL: XMAX2.Accounts.find({}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Accounts.find({}) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2018-08-14T20:06:02+08:00 ] ::1 /l/index.php/index/explorer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 41 行.
+SQL: XMAX2.Blocks.find({}).sort({"block_num":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2018-08-14T20:06:13+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2018-08-14T20:10:21+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:117) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:117) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:117) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2018-08-14T20:11:13+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:116) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:116) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php:116) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-08-14T20:11:34+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-08-14T20:11:56+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: id C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 116 行.
+
+[ 2018-08-14T20:12:11+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-08-14T20:21:18+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-08-14T20:23:29+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2018-08-14T20:23:34+08:00 ] ::1 /l/index.php/index/message/id/5b7166ffa9dd1a89f0002173.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({"_id":{"$id":"5b7166ffa9dd1a89f0002173"}}).sort({"createdTime":1}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\11ad21baec96e0036ac62bc610e39eb0.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-08-14T20:23:38+08:00 ] ::1 /l/index.php/index/explorer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 41 行.
+SQL: XMAX2.Blocks.find({}).sort({"block_num":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2018-08-14T20:33:20+08:00 ] ::1 /l/index.php/index/explorer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 41 行.
+SQL: XMAX2.Blocks.find({}).sort({"block_num":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2018-08-14T20:33:25+08:00 ] ::1 /l/index.php/index/block/data/561.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_num":561}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-08-14T20:36:37+08:00 ] ::1 /l/index.php/index/block/data/561.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_num":561}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-08-14T20:36:41+08:00 ] ::1 /l/index.php/index/address/name/testerp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0001s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Accounts.find({"name":"testerp"}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-08-14T20:36:50+08:00 ] ::1 /l/index.php/index/block/data/0000023045d992e5ce35ca18eb6ee113989763d4625454546f358dab982f0166.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"0000023045d992e5ce35ca18eb6ee113989763d4625454546f358dab982f0166"}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-08-14T20:36:53+08:00 ] ::1 /l/index.php/index/block/data/0000022faa6bcf784c7b818596647f3ef4c06cf99cfa7365d45365b9f2ebb3de.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"0000022faa6bcf784c7b818596647f3ef4c06cf99cfa7365d45365b9f2ebb3de"}).sort({"block_num":1}) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-08-14T20:36:55+08:00 ] ::1 /l/index.php/index/block/data/0000022e319c9bd3d55001f47330186a1d1be509ec0f982d2c3a95c54db4cc4e.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"0000022e319c9bd3d55001f47330186a1d1be509ec0f982d2c3a95c54db4cc4e"}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-08-14T20:36:59+08:00 ] ::1 /l/index.php/index/explorer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 41 行.
+SQL: XMAX2.Blocks.find({}).sort({"block_num":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-08-14T20:37:02+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-08-14T20:37:06+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-08-14T20:37:08+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-08-14T20:37:13+08:00 ] ::1 /l/index.php/index/explorer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 41 行.
+SQL: XMAX2.Blocks.find({}).sort({"block_num":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\efba05c54c6ffd581ba7421fe64de8f7.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-08-14T20:37:16+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 75 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 76 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 77 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2018-08-14T20:38:04+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0001s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 70 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 71 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 72 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-08-14T20:38:08+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2018-08-14T20:38:43+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2018-08-14T20:38:53+08:00 ] ::1 /l/index.php/index/fylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Messages) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.findOne() [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Messages.find({}).sort({"createdTime":-1}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Messages.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 70 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 71 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 72 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\e95a2c70cf480d9a2225b060031193a8.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2018-08-14T20:38:56+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-08-14T20:38:58+08:00 ] ::1 /l/index.php/index/block/data/00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621"}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-08-14T20:39:04+08:00 ] ::1 /l/index.php/index/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: name C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 175 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 178 行.
+SQL: XMAX2.Accounts.find({}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-08-14T20:39:59+08:00 ] ::1 /l/index.php/index/account.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined variable: name C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 175 行.
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 178 行.
+SQL: XMAX2.Accounts.find({}).limit(10) [ RunTime:0.0000s ]
+SQL: XMAX2.Accounts.find({}) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\dfaad8906c817a6fa9a7cbbe056751e1.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-08-14T20:40:02+08:00 ] ::1 /l/index.php/index/address/name/testerc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Accounts) [ RunTime:0.0001s ]
+SQL: XMAX2.Accounts.findOne() [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Accounts.find({"name":"testerc"}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\1a81a063a0e99c08933cc79013f02060.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2018-08-14T20:40:06+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2018-08-14T20:44:52+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0001s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0081s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-08-14T20:50:12+08:00 ] ::1 /l/index.php/index/paylist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 212 行.
+SQL: XMAX2.Transactions.find({}).sort({"expiration":-1}).limit(10) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 71 行.
+NOTIC: [8] Undefined variable: keys C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 72 行.
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\3791f4837a7713fba118f60412eb2cc2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2018-08-14T20:50:17+08:00 ] ::1 /l/index.php/index/transaction/data/f6cb0d03f226f38a01c3285f363b70c34410c18e8d82eb99d78522fc852db7d2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Transactions) [ RunTime:0.0000s ]
+SQL: XMAX2.Transactions.findOne() [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Transactions.find({"transaction_id":"f6cb0d03f226f38a01c3285f363b70c34410c18e8d82eb99d78522fc852db7d2"}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 235 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\c2a9614dacd8e8299b9084255d6638f6.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\c2a9614dacd8e8299b9084255d6638f6.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-08-14T20:50:23+08:00 ] ::1 /l/index.php/index/block/data/00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+SQL: XMAX2.getCollection(Blocks) [ RunTime:0.0000s ]
+SQL: XMAX2.Blocks.findOne() [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+NOTIC: [8] Undefined index: primary C:\phpStudy\PHPTutorial\WWW\l\ThinkPHP\Library\Think\Model.class.php 第 143 行.
+SQL: XMAX2.Blocks.find({"block_id":"00000229367530318345115185ffacc23b83d2573d2fe3624ca2610d526be621"}).sort({"block_num":1}) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: block C:\phpStudy\PHPTutorial\WWW\l\App\Home\Controller\IndexController.class.php 第 163 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: p C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 73 行.
+NOTIC: [8] Undefined variable: type C:\phpStudy\PHPTutorial\WWW\l\Runtime\Cache\Home\565abc0a97aad4650d6c2d5a8b8ed29b.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+

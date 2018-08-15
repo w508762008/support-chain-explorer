@@ -50,8 +50,8 @@ $(function(){
 				<tbody role="rowgroup" class=""><!---->
 					<volist name="list" id="vo">
 					<tr role="row" class="">
-						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><{$vo.block_id}></div></td>
-						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_id']))}>" class="address-tag"><{$vo.block_id}></a></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
 						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><{$vo.timestamps}></div></td>
 						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><{$vo.prev_block_id}></div></td> -->
 						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><{$vo.builder_account_name}></div></td>
@@ -82,7 +82,7 @@ $(function(){
 					<volist name="list" id="vo">
 					<tr role="row" class="">
 						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><{$vo.message_id}></div></td>
-						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<{:U('index/paylist',array('transaction'=>$vo['transaction_id']))}>"><{$vo.transaction_id}></a></div></td>
+						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a class="address-tag" href="<{:U('index/paylist',array('transaction'=>$vo['transaction_id']))}>"><{$vo.transaction_id}></a></div></td>
 						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><{$vo.handler_account_name}></div></td>
 						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><{$vo.type}></div></td>
 						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><{$vo.createdTimes}></div></td>
@@ -116,7 +116,7 @@ $(function(){
 						<tr role="row" class="">
 							<td aria-colindex="1" data-label="Transaction id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.transaction_id}></a></div></td>
 							<td aria-colindex="2" data-label="Transaction index" role="cell" class=""><div><font class="text-success"><{$vo.transaction_index}></font></div></td>
-							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
+							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
 							<!-- <td aria-colindex="4" data-label="ref_block_num" role="cell" class=""><div><{$vo.ref_block_num}></div></td> -->
 							<!-- <td aria-colindex="5" data-label="ref_block_prefix" role="cell" class=""><div><{$vo.ref_block_prefix}></div></td> -->
 							<td aria-colindex="6" data-label="Expiration" role="cell" class=""><div><{$vo.expirations}></div></td>

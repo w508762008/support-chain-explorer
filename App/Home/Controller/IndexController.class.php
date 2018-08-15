@@ -113,6 +113,7 @@ class IndexController extends Controller {
 		
 		foreach($list as $k=>$v){
 			$v['createdTimes'] = date('Y-m-d H:i:s',$v['createdTime']->sec);
+			$v['ids'] = $v['_id']->__toString();
 			$newlist[] = $v;
 		}
 		$this->assign('list',$newlist);
@@ -141,6 +142,25 @@ class IndexController extends Controller {
 			$this->assign('data',$data);
 			$this->assign('keys',$block);
 		}
+		$this->display();
+	}
+	public function block(){
+		$model = D('Blocks');
+		//var_dump(strlen($data));die;
+		$data = I('get.data');
+		if(strlen($data)>=64){
+			$where['block_id'] = $data;
+		}elseif(strlen($data)<64 &&strlen($data)>0 ){
+			$where['block_num'] = $data;	
+		}
+		$a = $model->where($where)->order('block_num asc')->select();//var_dump($model->getlastsql());
+		
+		foreach($a as $k=>$v){
+			$data = $v;
+			$data['timestamps'] = date('Y-m-d H:i:s',$data['timestamp']->sec);
+		}
+		$this->assign('data',$data);
+		$this->assign('keys',$block);
 		$this->display();
 	}
 	public function account(){
@@ -198,6 +218,22 @@ class IndexController extends Controller {
 		//var_dump($newlist);die;
 		$this->assign('list',$newlist);
 		
+		$this->display();
+	}
+	public function transaction(){
+		$data = I('get.data');
+		$a = D('Transactions')->where(array('transaction_id'=>$data))->select();//第二查询记录id
+		if(count($a)){
+			foreach($a as $k=>$v){
+				$data = $v;
+				$data['expirations'] = date('Y-m-d H:i:s',$data['expiration']->sec);
+				$data['messagess'] = array_values(get_object_vars($data['messages'][0]));
+				$data['url'] = U('index/paylist',array('transaction'=>$v['transaction_id']));
+			}
+			
+		}
+		$this->assign('data',$data);
+		$this->assign('keys',$block);
 		$this->display();
 	}
 	public function message(){

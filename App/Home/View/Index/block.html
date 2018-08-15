@@ -1,0 +1,61 @@
+<include file="common/headr" />
+
+<body>
+	<include file="common/nav" />
+
+  <div id="admin_accounts" style="display: none" data=""></div>
+
+  
+
+  <div id="content" class="p-3 w-100 mx-auto mw-75" style="max-width: 1120px">
+
+    <div id="alert"><!----></div>
+ <include file="common/search" />
+	<div id="block" style="display:none;">
+		<div class="card key-value-box">
+			<div class="card-body"><h4 class="card-title titles">Block</h4><hr>
+				<div class="container">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+$(function(){
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(0).find("a").addClass('active');
+ }
+</script>
+
+
+
+
+<div id="data" style="display: none" data="{&quot;type&quot;: &quot;init&quot;}"></div>
+
+	
+	<div id="account">
+		<div class="card key-value-box mb-3">
+			<div class="card-body">
+				<h4 class="card-title">Account</h4><hr>
+				<div class="container">
+					<div class="row"><div class="col-sm-3">ID: </div><div class="col-sm-9"><{$data.block_id}></div></div>
+					<div class="row"><div class="col-sm-3">Height: </div> <div class="col-sm-9"><{$data.block_num}></div></div>
+					<div class="row"><div class="col-sm-3">Parent ID: </div> <div class="col-sm-9"><a href="<{:U('index/block',array('data'=>$data['prev_block_id']))}>"><{$data.prev_block_id}></a></div></div>
+					<div class="row"><div class="col-sm-3">Timestamp: </div> <div class="col-sm-9"><{$data.timestamps}> </div></div>
+					<div class="row"><div class="col-sm-3">Builder: </div> <div class="col-sm-9"><a href="<{:U('index/address',array('name'=>$data['builder_account_name']))}>"><{$data.builder_account_name}></a></div></div>
+					<div class="row"><div class="col-sm-3">Transaction Merkle Root: </div> <div class="col-sm-9"><{$data.transaction_merkle_root}></div></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	
+
+  </div>
+
+
+
+</body></html>

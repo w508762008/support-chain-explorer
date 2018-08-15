@@ -57,9 +57,9 @@ $(function(){
 					<notempty name="list">
 					<volist name="list" id="vo">
 						<tr role="row" class="">
-							<td aria-colindex="1" data-label="Transaction id" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.transaction_id}></a></div></td>
+							<td aria-colindex="1" data-label="Transaction id" role="cell" class=""><div><a href="<{:U('index/transaction',array('data'=>$vo['transaction_id']))}>" target="_self" class="address-tag"><{$vo.transaction_id}></a></div></td>
 							<td aria-colindex="2" data-label="Transaction index" role="cell" class=""><div><font class="text-success"><{$vo.transaction_index}></font></div></td>
-							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
+							<td aria-colindex="3" data-label="Block id" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_id']))}>" target="_self" class="address-tag"><{$vo.block_id}></a></div></td>
 							<!-- <td aria-colindex="4" data-label="ref_block_num" role="cell" class=""><div><{$vo.ref_block_num}></div></td> -->
 							<!-- <td aria-colindex="5" data-label="ref_block_prefix" role="cell" class=""><div><{$vo.ref_block_prefix}></div></td> -->
 							<td aria-colindex="6" data-label="Expiration" role="cell" class=""><div><{$vo.expirations}></div></td>

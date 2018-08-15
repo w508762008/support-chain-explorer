@@ -57,8 +57,8 @@ $('.navbar-nav').find("a").removeClass('active');
 				<tbody role="rowgroup" class=""><!---->
 					<volist name="list" id="vo">
 					<tr role="row" class="">
-						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><{$vo.block_id}></div></td>
-						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/explorer',array('block'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
+						<td aria-colindex="1" data-label="ID" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_id']))}>" class="address-tag"><{$vo.block_id}></a></div></td>
+						<td aria-colindex="2" data-label="Height" role="cell" class=""><div><a href="<{:U('index/block',array('data'=>$vo['block_num']))}>"><{$vo.block_num}></a></div></td>
 						<td aria-colindex="3" data-label="Timestamp" role="cell" class=""><div><{$vo.timestamps}></div></td>
 						<!-- <td aria-colindex="4" data-label="Parent ID" role="cell" class=""><div><{$vo.prev_block_id}></div></td> -->
 						<td aria-colindex="5" data-label="builder" role="cell" class=""><div><{$vo.builder_account_name}></div></td>

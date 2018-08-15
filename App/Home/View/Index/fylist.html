@@ -2,12 +2,7 @@
 <body>
 	<include file="common/nav" />
 	
-	<script>
-	$(function(){
-	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(1).find("a").addClass('active');
-	});
-	</script>
+	
 
   <div id="admin_accounts" style="display: none" data=""></div>
 
@@ -45,8 +40,8 @@
 				<tbody role="rowgroup" class=""><!---->
 					<volist name="list" id="vo">
 					<tr role="row" class="">
-						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><{$vo.message_id}></div></td>
-						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a href="<{:U('index/paylist',array('transaction'=>$vo['transaction_id']))}>"><{$vo.transaction_id}></a></div></td>
+						<td aria-colindex="1" data-label="Message ID" role="cell" class=""><div><a href="<{:U('index/message',array('id'=>$vo['ids']))}>"><{$vo.message_id}></div></td>
+						<td aria-colindex="2" data-label="Transaction ID" role="cell" class=""><div><a class="address-tag" href="<{:U('index/transaction',array('data'=>$vo['transaction_id']))}>"><{$vo.transaction_id}></a></div></td>
 						<td aria-colindex="3" data-label="Handler Account Name" role="cell" class=""><div><{$vo.handler_account_name}></div></td>
 						<td aria-colindex="4" data-label="Type" role="cell" class=""><div><{$vo.type}></div></td>
 						<td aria-colindex="5" data-label="CreatedTime" role="cell" class=""><div><{$vo.createdTimes}></div></td>
@@ -64,6 +59,11 @@
 
   </div>
 
-
+<script>
+	$(function(){
+	$('.navbar-nav').find("a").removeClass('active');
+	$('.navbar-nav li').eq(1).find("a").addClass('active');
+	});
+	</script>
 
 </body></html>

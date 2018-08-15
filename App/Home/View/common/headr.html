@@ -21,4 +21,25 @@
   
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="__PUBLIC__/static/translateelement.css"></head>
 
-<script type="text/javascript" async="" src="__PUBLIC__/static/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/jquery.js"></script>
+<script>
+$(window).resize(function(){
+		var w = $(window).height();
+		if(w>800){
+			$("#nav_collapse").hide();$("#nav button").attr('atia-expanded','false');
+		}
+	});
+$(function(){
+	$("#nav button").click(function(){
+		var type = $(this).attr('atia-expanded');
+		if(type == 'true'){
+			$("#nav_collapse").slideUp(1000);$(this).attr('atia-expanded','false');
+		}else{
+			$("#nav_collapse").slideDown(1000);$(this).attr('atia-expanded','true');
+		}
+	});
+	
+	
+	
+});
+</script>

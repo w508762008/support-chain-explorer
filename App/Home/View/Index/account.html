@@ -52,7 +52,7 @@ $(function(){
 					<notempty name="list">
 					<volist name="list" id="vo">
 						<tr role="row" class="">
-							<td aria-colindex="1" data-label="name" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.name}></a></div></td>
+							<td aria-colindex="1" data-label="name" role="cell" class=""><div><a href="<{:U('index/address',array('name'=>$vo['name']))}>" target="_self" class="address-tag"><{$vo.name}></a></div></td>
 							<!-- <td aria-colindex="2" data-label="xmx_token" role="cell" class=""><div><font class="text-success"><{$vo.xmx_token}></font></div></td> -->
 							<!-- <td aria-colindex="3" data-label="staked_token" role="cell" class=""><div><a href="javascript:void(0);" target="_self" class="address-tag"><{$vo.staked_token}></a></div></td> -->
 							<!-- <td aria-colindex="4" data-label="unstaking_token" role="cell" class=""><div><{$vo.unstaking_token}></div></td> -->
