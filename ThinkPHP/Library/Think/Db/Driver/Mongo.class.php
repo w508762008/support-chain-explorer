@@ -140,7 +140,8 @@ class Mongo extends Driver {
             E($e->getMessage());
         }
     }
-
+	
+	
     /**
      * 执行语句
      * @access public
@@ -454,6 +455,11 @@ class Mongo extends Driver {
             $this->queryStr   .= $query?'.find('.json_encode($query).')':'';
             $this->queryStr   .= '.count()';
         }
+		
+		$r   =  $this->_dbName.'.'.$this->_collectionName;
+            $r   .= $query?'.find('.json_encode($query).')':'';
+            $r   .= '.count()';
+		//var_dump($r);
         try{
             $this->debug(true);
             $count   = $this->_collection->count($query);

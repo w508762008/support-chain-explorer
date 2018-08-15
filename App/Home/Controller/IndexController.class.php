@@ -6,17 +6,7 @@ class IndexController extends Controller {
 	public $td = '';
     public function index(){
 		$this->explorer();
-		//var_dump(C('DB_TYPE'));die;
-        // $this->show();          
-        $model = D('Accounts');   
-        $model = D('Blocks');   
-          /* $model->user='cgcgcg';
-          $model->password='123456';
-          $model->add(); */
-        $a = $model->select();
-		$a = $model->where(array('block_num'=>'28'))->select();
-       // var_dump($a);
-        // $this->display();
+		
 		$this->display('explorer');
     }
 	public function explorer(){ //块数据
@@ -24,12 +14,14 @@ class IndexController extends Controller {
 		$p = I('get.p')?I('get.p'):1;
 		if($block || $p){
 			$model = D('Blocks');
+			//$all = array("distinct"=>"Blocks");
+			
 			//$model = new \MongoModel('Blocks');
 			if(strlen(trim($block))>=64){
 				$where['block_id'] = $block;
 				$this->assign('keys',$block);
 			}elseif(strlen(trim($block))<64 &&strlen(trim($block))>0 ){
-				$where['block_num'] = $block;
+				$where['block_num'] = intval($block);
 				$this->assign('keys',$block);				
 			}
 			
@@ -45,7 +37,8 @@ class IndexController extends Controller {
 				$newlist[] = $v;
 			}
 			$this->assign('list',$newlist);
-			$count = count($model->select());
+			$count = ($model->total(array('where'=>$where)));
+			//$sss = $model->total(array('where'=>$where));var_dump($sss);var_dump($model->getlastsql());die;
 			$page = new \Think\Page($count,10);
 			$show = $page->show();
 			$this->assign('page',$show);
@@ -117,7 +110,7 @@ class IndexController extends Controller {
 			$newlist[] = $v;
 		}
 		$this->assign('list',$newlist);
-		$count = count($model->select());
+		$count = ($model->total());
 		$page = new \Think\Page($count,10);
 		$show = $page->show();
 		$this->assign('page',$show);
@@ -183,7 +176,7 @@ class IndexController extends Controller {
 			$newlist[] = $v;
 		}
 		$this->assign('list',$newlist);
-		$count = count($model->select());
+		$count = ($model->total(array('where'=>$where)));
 		$page = new \Think\Page($count,10);
 		$show = $page->show();
 		$this->assign('page',$show);
@@ -198,7 +191,7 @@ class IndexController extends Controller {
 		}
 		$model = D('Transactions');
 		
-		$count = count($model->select());
+		$count = ($model->total(array('where'=>$where)));
 		$page = new \Think\Page($count,10);
 		$show = $page->show();
 		$this->assign('page',$show);
@@ -292,7 +285,7 @@ class IndexController extends Controller {
 		if(strlen($keys)>=64){
 			$where['block_id'] = $keys;
 		}elseif(strlen($keys)<64 &&strlen($keys)>0 ){
-			$where['block_num'] = $keys;	
+			$where['block_num'] = intval($keys);			
 		}
 		if($keys){
 			if(is_numeric($keys))$where1['message_id'] = intval($keys);
@@ -300,16 +293,24 @@ class IndexController extends Controller {
 			$where3['name'] = new \MongoRegex("/$keys/"); 
 		}
 		
-		$blocks_num = count($model->where($where)->select());//blocks 数量
+		$model->find($where);
+		$blocks_num = ($model->total(array('where'=>$where)));//blocks 数量
+		//var_dump($blocks_num);die;
 		$this->assign('blocks_num',($blocks_num));
 		if($blocks_num>0 && $type=='' ){$type = 'Blocks';}
-		if(is_array($where1))$messages_num = count($model1->where($where1)->select());//Messages 数量
+		
+		$model1->find($where);
+		if(is_array($where1))$messages_num = ($model1->total(array('where'=>$where1)));//Messages 数量
 		$this->assign('messages_num',($messages_num));
 		if($messages_num>0 && $type==''){$type = 'Messages';}
-		$transactions_num = count($model2->where($where2)->select());//Transactions 数量
+		
+		$model2->find($where);
+		$transactions_num = ($model2->total(array('where'=>$where2)));//Transactions 数量
 		$this->assign('transactions_num',($transactions_num));
 		if($transactions_num>0 && $type==''){$type = 'Transactions';}
-		$accounts_num = count($model3->where($where3)->select());//Accounts 数量
+		
+		$model3->find($where);
+		$accounts_num = ($model3->total(array('where'=>$where3)));//Accounts 数量
 		$this->assign('accounts_num',($accounts_num));
 		//var_dump($type);
 		if($accounts_num>0 && $type==''){$type = 'Accounts';}
@@ -325,7 +326,7 @@ class IndexController extends Controller {
 				$newlist[] = $v;
 			}
 			$this->assign('list',$newlist);
-			$count = count($model->where($where)->select());
+			$count = ($model->total(array('where'=>$where)));
 			$page = new \Think\Page($count,10);
 			$show = $page->showj();
 			$this->assign('page',$show);
@@ -337,13 +338,13 @@ class IndexController extends Controller {
 				$newlist[] = $v;
 			}
 			$this->assign('list',$newlist);
-			$count = count($model1->where($where1)->select());
+			$count = ($model1->total(array('where'=>$where1)));
 			$page = new \Think\Page($count,10);
 			$show = $page->showj();
 			$this->assign('page',$show);
 			
 		}elseif($type == 'Transactions'){
-			$count = count($model2->where($where2)->select());
+			$count = ($model2->total(array('where'=>$where2)));
 			$page = new \Think\Page($count,10);
 			$show = $page->showj();
 			$this->assign('page',$show);
@@ -364,7 +365,7 @@ class IndexController extends Controller {
 				$newlist[] = $v;
 			}
 			$this->assign('list',$newlist);
-			$count = count($model3->where($where3)->select());
+			$count = ($model3->total(array('where'=>$where3)));
 			$page = new \Think\Page($count,10);
 			$show = $page->showj();
 			$this->assign('page',$show);

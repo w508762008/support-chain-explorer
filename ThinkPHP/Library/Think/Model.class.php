@@ -781,7 +781,12 @@ class Model {
     }
     // 查询成功的回调方法
     protected function _after_find(&$result,$options) {}
+	
+	
+	public function total($sql){
+     return $this->db->count($sql);//返回结果请自己打印
 
+	}
     protected function returnResult($data,$type=''){
         if ($type){
             if(is_callable($type)){
