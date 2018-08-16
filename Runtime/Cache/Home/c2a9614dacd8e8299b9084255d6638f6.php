@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
   <link type="text/css" rel="stylesheet" href="/l/Public/static/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="/l/Public/static/bootstrap-vue.css">
+  
   <link rel="stylesheet" type="text/css" href="/l/Public/static/style.css">
 
 
@@ -17,19 +17,33 @@
 #page span{width: 20px;padding:0px 4px;display: inline-table;line-height: 20px;text-align: center;background-color:#17a2b8;color:#fff;border-radius:3px;}
 #page a{width: 20px;padding:0px 4px;display: inline-table;line-height: 20px;text-align: center;color:#333;text-decoration:none;}
 #page a:hover{background-color:#eee;}
+.navbar-nav .dropdown-menu{position:absolute;}
+
+.dpm{position: absolute;right: 0;}
+
 </style>
   
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="/l/Public/static/translateelement.css"></head>
 
 <script type="text/javascript" src="/l/Public/static/jquery.js"></script>
+<script src="/l/Public/static/bootstrap.js"></script>
+
 <script>
-$(window).resize(function(){
-		var w = $(window).height();
+function is_pan(){
+	var w = $(window).height();
 		if(w>800){
+			$("#bishi").addClass('dpm');
 			$("#nav_collapse").hide();$("#nav button").attr('atia-expanded','false');
+		}else{
+			
+			$("#bishi").removeClass('dpm');
 		}
-	});
+}
+$(window).resize(function(){
+		is_pan();
+});
 $(function(){
+is_pan();
 	$("#nav button").click(function(){
 		var type = $(this).attr('atia-expanded');
 		if(type == 'true'){
@@ -39,6 +53,12 @@ $(function(){
 		}
 	});
 	
+	$('#__BVID__4').on('show.bs.dropdown', function () {
+		$("#__BVID__4 div").addClass('show');
+	});
+	$('#__BVID__4').on('hide.bs.dropdown', function () {
+		$("#__BVID__4 div").removeClass('show');
+	});
 	
 	
 });
@@ -49,6 +69,15 @@ $(function(){
 	<nav id="nav" class="navbar navbar-dark bg-info navbar-expand-md">
 		<button type="button" aria-label="Toggle navigation" aria-controls="nav_collapse" aria-expanded="false" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
 		<a href="/" target="_self" class="navbar-brand">XMAX<span class="brand-subtitle">testnet</span></a>
+		<ul class="navbar-nav ml-auto" id="bishi">
+			<li id="__BVID__4" class="nav-item b-nav-dropdown dropdown" title="" data-original-title="Pick the cluster to connect">
+				<a href="#" id="__BVID__4__BV_button_" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="nav-link dropdown-toggle"><span>side chain node 1</span></a>
+				<div aria-labelledby="__BVID__4__BV_button_" class="dropdown-menu dropdown-menu-right">
+					<a role="menuitem" href="#" target="_self" class="dropdown-item">side chain node 1</a>
+					
+				</div>
+			</li>
+		</ul>
 		<div id="nav_collapse" class="navbar-collapse collapse" style="display: none;">
 			<ul class="navbar-nav">
 				<li class="nav-item"><a href="<?php echo U('index/explorer');?>" target="_self" class="nav-link ">Blocks</a></li>
@@ -56,23 +85,16 @@ $(function(){
 				<li class="nav-item"><a href="<?php echo U('index/paylist');?>" target="_self" class="nav-link">Transactions</a></li>
 				<li class="nav-item"><a href="<?php echo U('index/account');?>" target="_self" class="nav-link">Accounts</a></li>
 			</ul>
-			<!-- <ul class="navbar-nav ml-auto">
-				<li id="__BVID__4" class="nav-item b-nav-dropdown dropdown" title="" data-original-title="Pick the cluster to connect">
-					<a href="#" id="__BVID__4__BV_button_" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>Cluster: 35.155.169.253:38291</span></a>
-					<div aria-labelledby="__BVID__4__BV_button_" class="dropdown-menu dropdown-menu-right">
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">35.155.169.253:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">34.219.75.227:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">13.250.13.230:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">18.130.95.207:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">34.209.241.68:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">52.59.225.54:38291</a>
-						<a role="menuitem" href="#" target="_self" class="dropdown-item">54.204.87.153:38291</a>
-					</div>
-				</li>
-			</ul> -->
+			
+			
+
+			
 		</div>
-	</nav>
+	
+	
+	</nav>		
 	</div>
+	
 	
 	
 

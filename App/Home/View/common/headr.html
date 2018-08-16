@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
   <link type="text/css" rel="stylesheet" href="__PUBLIC__/static/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="__PUBLIC__/static/bootstrap-vue.css">
+  
   <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/style.css">
 
 
@@ -17,19 +17,33 @@
 #page span{width: 20px;padding:0px 4px;display: inline-table;line-height: 20px;text-align: center;background-color:#17a2b8;color:#fff;border-radius:3px;}
 #page a{width: 20px;padding:0px 4px;display: inline-table;line-height: 20px;text-align: center;color:#333;text-decoration:none;}
 #page a:hover{background-color:#eee;}
+.navbar-nav .dropdown-menu{position:absolute;}
+
+.dpm{position: absolute;right: 0;}
+
 </style>
   
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="__PUBLIC__/static/translateelement.css"></head>
 
 <script type="text/javascript" src="__PUBLIC__/static/jquery.js"></script>
+<script src="__PUBLIC__/static/bootstrap.js"></script>
+
 <script>
-$(window).resize(function(){
-		var w = $(window).height();
+function is_pan(){
+	var w = $(window).height();
 		if(w>800){
+			$("#bishi").addClass('dpm');
 			$("#nav_collapse").hide();$("#nav button").attr('atia-expanded','false');
+		}else{
+			
+			$("#bishi").removeClass('dpm');
 		}
-	});
+}
+$(window).resize(function(){
+		is_pan();
+});
 $(function(){
+is_pan();
 	$("#nav button").click(function(){
 		var type = $(this).attr('atia-expanded');
 		if(type == 'true'){
@@ -39,6 +53,12 @@ $(function(){
 		}
 	});
 	
+	$('#__BVID__4').on('show.bs.dropdown', function () {
+		$("#__BVID__4 div").addClass('show');
+	});
+	$('#__BVID__4').on('hide.bs.dropdown', function () {
+		$("#__BVID__4 div").removeClass('show');
+	});
 	
 	
 });
