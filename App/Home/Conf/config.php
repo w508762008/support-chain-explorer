@@ -1,8 +1,14 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	
-//'URL_MODEL' => 2,
+
+url_html_suffix=>'',	
+// URL地址不区分大小写
+'URL_CASE_INSENSITIVE' => true,
+//REWRITE模式
+'URL_MODEL' => 2,
+'DEFAULT_MODULE' => 'Home',
+'MODULE_ALLOW_LIST' => array('Home'),
 'MONGO'=> array(
 'DB_TYPE'   => 'mongo', // 数据库类型
 'DB_HOST'   => 'localhost', // 服务器地址
