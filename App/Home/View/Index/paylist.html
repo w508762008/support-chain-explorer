@@ -24,7 +24,7 @@
 <script>
 $(function(){
 	$('.navbar-nav').find("a").removeClass('active');
-	$('.navbar-nav li').eq(2).find("a").addClass('active');
+	$('.navbar-nav li').eq(3).find("a").addClass('active');
 });
 </script>
 
@@ -39,6 +39,7 @@ $(function(){
 		<div class="card mt-3">
 			<div class="card-body">
 				<h4 class="card-title">Transactions</h4>
+				<div class="table-responsive">
 				<table id="__BVID__17" role="table" aria-busy="false" aria-colcount="8" aria-rowcount="15" class="table b-table table-hover b-table-stacked-sm"><!----><!---->
 					<thead class="">
 						<tr>
@@ -71,6 +72,7 @@ $(function(){
 					</notempty>
 					</tbody>
 				</table>
+				</div>
 				<div id="page"><{$page}></div>
 			</div>
 		</div>
